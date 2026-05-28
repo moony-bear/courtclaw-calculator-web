@@ -428,26 +428,26 @@ function renderTimelineStages() {
 '<div class="stage-item-head"><h4><span class="stage-num">' + (i+1) + '</span>' + (s.label || ('阶段'+(i+1))) + '</h4>' +
 '<button class="btn btn-danger btn-sm" onclick="removeTimelineStage(' + s._id + ')">删除此阶段</button></div>' +
 '<div class="stage-form">' +
-'<div class="form-group"><label class="form-label">生效日期</label><input type="date" value="' + (s.effectiveDate||'') + '" onchange="updateStageField(' + s._id + ",\'effectiveDate\',this.value)"></div>' +
-'<div class="form-group"><label class="form-label">阶段名称</label><input type="text" value="' + (s.label||'') + '" placeholder="阶段名称" onchange="updateStageField(' + s._id + ",\'label\',this.value)"></div>' +
-'<div class="form-group"><label class="form-label">利率来源</label><select onchange="updateStageField(' + s._id + ",\'rateSource\',this.value);toggleStageField(" + s._id + ",\'stageFixedRate\',this.value===\'fixed\');toggleStageField(" + s._id + ",\'stageCustomRate\',this.value===\'custom_schedule\')">' +
+'<div class="form-group"><label class="form-label">生效日期</label><input type="date" value="' + (s.effectiveDate||'') + '" onchange="updateStageField(' + s._id + ',\'effectiveDate\',this.value)"></div>' +
+'<div class="form-group"><label class="form-label">阶段名称</label><input type="text" value="' + (s.label||'') + '" placeholder="阶段名称" onchange="updateStageField(' + s._id + ',\'label\',this.value)"></div>' +
+'<div class="form-group"><label class="form-label">利率来源</label><select onchange="updateStageField(' + s._id + ',\'rateSource\',this.value);toggleStageField(' + s._id + ',\'stageFixedRate\',this.value===\'fixed\');toggleStageField(' + s._id + ',\'stageCustomRate\',this.value===\'custom_schedule\')">' +
 '<option value="lpr_5y"' + (s.rateSource==='lpr_5y'?' selected':'') + '>5年期以上LPR</option>' +
 '<option value="lpr_1y"' + (s.rateSource==='lpr_1y'?' selected':'') + '>1年期LPR</option>' +
 '<option value="benchmark_loan"' + (s.rateSource==='benchmark_loan'?' selected':'') + '>贷款基准利率</option>' +
 '<option value="fixed"' + (s.rateSource==='fixed'?' selected':'') + '>固定利率</option>' +
 '<option value="custom_schedule"' + (s.rateSource==='custom_schedule'?' selected':'') + '>自定义分段</option></select></div>' +
-'<div class="form-group" id="stageFixedRate-' + s._id + '" style="display:'+fidShow+'"><label class="form-label">固定年利率%</label><input type="number" value="' + (s.fixedRate||'') + '" step="0.01" onchange="updateStageField(' + s._id + ",\'fixedRate\',this.value)"></div>' +
-'<div class="form-group" id="stageCustomRate-' + s._id + '" style="display:'+cidShow+'"><label class="form-label">自定义利率</label><textarea rows="2" placeholder="日期,利率%" onchange="updateStageField(' + s._id + ",\'customRates\',this.value)">' + (s.customRates||'') + '</textarea></div>' +
-'<div class="form-group"><label class="form-label">调整方式</label><select onchange="updateStageField(' + s._id + ",\'adjustmentMode\',this.value)">' +
+'<div class="form-group" id="stageFixedRate-' + s._id + '" style="display:'+fidShow+'"><label class="form-label">固定年利率%</label><input type="number" value="' + (s.fixedRate||'') + '" step="0.01" onchange="updateStageField(' + s._id + ',\'fixedRate\',this.value)"></div>' +
+'<div class="form-group" id="stageCustomRate-' + s._id + '" style="display:'+cidShow+'"><label class="form-label">自定义利率</label><textarea rows="2" placeholder="日期,利率%" onchange="updateStageField(' + s._id + ',\'customRates\',this.value)">' + (s.customRates||'') + '</textarea></div>' +
+'<div class="form-group"><label class="form-label">调整方式</label><select onchange="updateStageField(' + s._id + ',\'adjustmentMode\',this.value)">' +
 '<option value="none"' + (s.adjustmentMode==='none'?' selected':'') + '>不调整</option>' +
 '<option value="basis_points"' + (s.adjustmentMode==='basis_points'?' selected':'') + '>BP加点</option>' +
 '<option value="multiplier"' + (s.adjustmentMode==='multiplier'?' selected':'') + '>倍数</option>' +
 '<option value="add_fixed"' + (s.adjustmentMode==='add_fixed'?' selected':'') + '>固定加点</option></select></div>' +
-'<div class="form-group"><label class="form-label">调整值</label><input type="number" value="' + (s.adjustmentValue||0) + '" step="0.01" onchange="updateStageField(' + s._id + ",\'adjustmentValue\',this.value)"></div>' +
-'<div class="form-group"><label class="form-label">天数基准</label><select onchange="updateStageField(' + s._id + ",\'dayBasis\',parseInt(this.value))">' +
+'<div class="form-group"><label class="form-label">调整值</label><input type="number" value="' + (s.adjustmentValue||0) + '" step="0.01" onchange="updateStageField(' + s._id + ',\'adjustmentValue\',this.value)"></div>' +
+'<div class="form-group"><label class="form-label">天数基准</label><select onchange="updateStageField(' + s._id + ',\'dayBasis\',parseInt(this.value))">' +
 '<option value="360"' + (s.dayBasis===360?' selected':'') + '>360天</option>' +
 '<option value="365"' + (s.dayBasis===365?' selected':'') + '>365天</option></select></div>' +
-'<div class="form-group"><label class="form-label">端点模式</label><select onchange="updateStageField(' + s._id + ",\'endpointMode\',this.value)">' +
+'<div class="form-group"><label class="form-label">端点模式</label><select onchange="updateStageField(' + s._id + ',\'endpointMode\',this.value)">' +
 '<option value="include_start_exclude_end"' + (s.endpointMode==='include_start_exclude_end'?' selected':'') + '>算头不算尾</option>' +
 '<option value="include_both"' + (s.endpointMode==='include_both'?' selected':'') + '>两头都算</option>' +
 '<option value="exclude_both"' + (s.endpointMode==='exclude_both'?' selected':'') + '>两头都不算</option>' +
