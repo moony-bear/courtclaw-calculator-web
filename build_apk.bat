@@ -1,77 +1,82 @@
 @echo off
-chcp 65001 >nul
+chcp 936 >nul 2>&1
 echo ========================================
-echo   CourtClaw 利息计算器 - APK 打包脚本
+echo   CourtClaw - APK Build Script
 echo ========================================
 echo.
 
 set JAVA_HOME=F:\packaging\jbr
 set ANDROID_HOME=F:\apk
+set FLUTTER_HOME=F:\flutter
 
-echo [1/5] 检查环境...
+echo [1/5] Checking environment...
 if not exist "%JAVA_HOME%\bin\java.exe" (
-    echo 错误: 找不到 Java (%JAVA_HOME%)
-    pause
-    exit /b 1
+    echo [ERROR] Java not found: %JAVA_HOME%
+    goto :fail
 )
 if not exist "%ANDROID_HOME%\platform-tools\adb.exe" (
-    echo 错误: 找不到 Android SDK (%ANDROID_HOME%)
-    pause
-    exit /b 1
+    echo [ERROR] Android SDK not found: %ANDROID_HOME%
+    goto :fail
 )
-if not exist "F:\flutter\bin\flutter.bat" (
-    echo 错误: 找不到 Flutter SDK (F:\flutter)
-    pause
-    exit /b 1
+if not exist "%FLUTTER_HOME%\bin\flutter.bat" (
+    echo [ERROR] Flutter SDK not found: %FLUTTER_HOME%
+    goto :fail
 )
+echo [OK] Environment check passed
+echo.
 
-echo [2/5] 清理 Gradle 缓存锁文件（解决超时问题）...
+echo [2/5] Cleaning Gradle lock files...
 for /d %%d in ("%USERPROFILE%\.gradle\wrapper\dists\*") do (
     if exist "%%d\*.lck" del /f /q "%%d\*.lck" >nul 2>&1
 )
-if not exist "%USERPROFILE%\.gradle\wrapper\dists\gradle-9.1.0-all\gradle-9.1.0" (
-    echo   注意：Gradle 9.1.0 首次下载可能需要较长时间...
-    echo   如果超时，请确保网络通畅后重试
-)
-echo ✓ 环境检查通过
+echo [OK] Lock files cleaned
 echo.
 
 cd /d "%~dp0mobile_app"
-
-echo [3/5] 获取项目依赖...
-F:\flutter\bin\flutter pub get
 if errorlevel 1 (
-    echo 错误: 获取依赖失败
-    pause
-    exit /b 1
+    echo [ERROR] Cannot enter mobile_app directory
+    goto :fail
 )
-echo ✓ 依赖获取完成
+
+echo [3/5] Running flutter pub get...
+"%FLUTTER_HOME%\bin\flutter" pub get
+if errorlevel 1 (
+    echo [ERROR] flutter pub get failed
+    goto :fail
+)
+echo [OK] Dependencies ready
 echo.
 
-echo [4/5] 构建 Release APK...
-echo 这可能需要几分钟时间，请耐心等待...
+echo [4/5] Building Release APK...
+echo   This may take a few minutes, please wait...
 echo.
-F:\flutter\bin\flutter build apk --release --no-pub
+"%FLUTTER_HOME%\bin\flutter" build apk --release --no-pub
 if errorlevel 1 (
     echo.
     echo ========================================
-    echo   构建失败！常见原因：
-    echo   1. Gradle 下载超时 → 重试此脚本
-    echo   2. 内存不足 → 关闭其他程序后重试
-    echo   3. JDK 版本不匹配 → 检查 JAVA_HOME
+    echo   BUILD FAILED!
+    echo   Common fixes:
+    echo   1. Network timeout -> retry this script
+    echo   2. Low memory -> close other apps
+    echo   3. JDK mismatch -> check JAVA_HOME
     echo ========================================
-    pause
-    exit /b 1
+    goto :fail
 )
 echo.
-echo ✓ 构建成功！
+echo [OK] Build SUCCESS!
 echo.
 
-echo [5/5] 输出文件位置:
-echo.
-echo   APK 文件: %~dp0mobile_app\build\app\outputs\flutter-apk\app-release.apk
+echo [5/5] Output location:
+echo   APK: %~dp0mobile_app\build\app\outputs\flutter-apk\app-release.apk
 echo.
 echo ========================================
-echo   打包完成！
+echo   ALL DONE!
 echo ========================================
 pause
+exit /b 0
+
+:fail
+echo.
+echo Press any key to exit...
+pause >nul
+exit /b 1

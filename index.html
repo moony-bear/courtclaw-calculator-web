@@ -10,26 +10,22 @@
 :root{--primary:#315EFB;--primary-light:#5B8AFF;--primary-bg:#EEF2FF;--surface:#FFF;--surface-variant:#F7F9FC;--bg:#F4F7FB;--text:#1A1D26;--text-secondary:#5E6476;--text-muted:#989CB0;--border:#E2E5EA;--border-light:#EDF0F3;--success:#22C55E;--warning:#F59E0B;--error:#EF4444;--purple:#7C3AED;--radius:12px;--radius-lg:16px;--shadow-sm:0 1px 3px rgba(0,0,0,.06);--shadow:0 4px 12px rgba(0,0,0,.08);--shadow-lg:0 8px 30px rgba(0,0,0,.12)}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
-
 .app-header{background:linear-gradient(135deg,#315EFB 0%,#1E40AF 100%);color:#fff;padding:18px 24px;position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
 .header-content{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:14px}
 .header-icon{width:40px;height:40px;background:rgba(255,255,255,.2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
 .header-title{font-size:19px;font-weight:700;letter-spacing:-.3px}
 .header-subtitle{font-size:12px;opacity:.8;margin-top:1px}
 .container{max-width:1200px;margin:0 auto;padding:16px 20px}
-
 .tabs-nav{display:flex;gap:2px;background:var(--surface-variant);padding:4px;border-radius:var(--radius-lg);margin-bottom:20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 .tab-btn{padding:11px 22px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;border:none;background:transparent;color:var(--text-secondary);transition:all .2s;white-space:nowrap;font-family:inherit}
 .tab-btn.active{background:var(--surface);color:var(--primary);box-shadow:var(--shadow-sm)}
 .tab-btn:hover:not(.active){color:var(--text)}
 .tab-panel{display:none}.tab-panel.active{display:block}
-
 .card{background:var(--surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-sm);border:1px solid var(--border-light);margin-bottom:16px;overflow:hidden}
 .card-header{padding:14px 20px;border-bottom:1px solid var(--border-light);display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
 .card-header h3{font-size:15px;font-weight:700;color:var(--text);display:flex;align-items:center;gap:8px}
 .card-header h3 .icon{width:26px;height:26px;background:var(--primary-bg);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--primary)}
 .card-body{padding:18px 20px}
-
 .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
 .form-group{display:flex;flex-direction:column;gap:5px}
 .form-group.full{grid-column:1/-1}
@@ -39,15 +35,12 @@ input[type=text],input[type=number],input[type=date],select,textarea{width:100%;
 input:focus,select:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(49,94,251,.1)}
 textarea{resize:vertical;min-height:70px;line-height:1.5}
 select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%235E6476' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 11px center;padding-right:32px}
-
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:10px 20px;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:all .2s;white-space:nowrap;font-family:inherit}
-.btn-primary{background:var(--primary);color:#fff;box-shadow:0 2px 8px rgba(49,94,251,.35)}.btn-primary:hover{background:#234D4;transform:translateY(-1px)}
+.btn-primary{background:var(--primary);color:#fff;box-shadow:0 2px 8px rgba(49,94,251,.35)}.btn-primary:hover{background:#2344CC;transform:translateY(-1px)}
 .btn-secondary{background:var(--surface-variant);color:var(--text-secondary);border:1.5px solid var(--border)}.btn-secondary:hover{background:var(--border-light)}
 .btn-success{background:var(--success);color:#fff}.btn-danger{background:#FEE2E2;color:var(--error);border:1.5px solid #FECACA}.btn-danger:hover{background:#FECACA}
 .btn-sm{padding:7px 14px;font-size:12.5px;border-radius:8px}
 .btn-group{display:flex;gap:8px;flex-wrap:wrap}
-.btn-icon{width:32px;height:32px;padding:0;border-radius:8px;font-size:15px}
-
 .hero-card{background:linear-gradient(135deg,#2647D5 0%,#3D73FF 50%,#5A92FF 100%);color:#fff;padding:28px;border-radius:24px;box-shadow:0 14px 30px rgba(49,94,251,.2)}
 .hero-card h2{font-size:21px;font-weight:700;margin-bottom:6px}
 .hero-card p{font-size:13.5px;opacity:.88;line-height:1.5;margin-bottom:16px}
@@ -56,7 +49,6 @@ select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px}
 .btn-white{background:#fff;color:#2647D5;font-weight:700}.btn-white:hover{background:#f0f4ff}
 .btn-outline-white{color:#fff;border:1.5px solid rgba(255,255,255,.45);background:transparent}
-
 .result-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
 .summary-item{background:linear-gradient(135deg,var(--primary) 0%,#1E40AF 100%);color:#fff;padding:18px 16px;border-radius:var(--radius-lg)}
 .summary-item:nth-child(2){background:linear-gradient(135deg,#059669 0%,#047857 100%)}
@@ -66,11 +58,8 @@ select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%
 .summary-item:nth-child(6){background:linear-gradient(135deg,#0891B2 0%,#0E7490 100%)}
 .summary-label{font-size:12px;opacity:.85;margin-bottom:4px}
 .summary-value{font-size:22px;font-weight:700;letter-spacing:-.5px}
-
-.filter-chips{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0}
-.chip{padding:6px 15px;border-radius:20px;font-size:12.5px;font-weight:500;cursor:pointer;border:1.5px solid var(--border);background:var(--surface);color:var(--text-secondary);transition:all .15s;font-family:inherit}
+.chip{padding:6px 15px;border-radius:20px;font-size:12.5px;font-weight:500;cursor:pointer;border:1.5px solid var(--border);background:var(--surface);color:var(--text-secondary);transition:all .15s;font-family:inherit;display:inline-block;margin:2px}
 .chip.active{background:var(--primary);color:#fff;border-color:var(--primary)}
-
 .row-card{background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;transition:box-shadow .2s}
 .row-card:hover{box-shadow:var(--shadow)}
 .row-card-header{padding:12px 16px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;gap:10px;flex-wrap:wrap;background:var(--surface-variant)}
@@ -88,239 +77,261 @@ select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%
 .row-detail-item{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--border-light)}
 .row-detail-label{color:var(--text-muted)}
 .row-detail-val{font-weight:600;font-variant-numeric:tabular-nums}
-
 .record-list{border:1px solid var(--border-light);border-radius:var(--radius);overflow:hidden}
 .record-list-head{display:grid;grid-template-columns:140px 130px 1fr 80px;background:var(--surface-variant);padding:10px 14px;font-size:12px;font-weight:600;color:var(--text-secondary);gap:10px}
 .record-row{display:grid;grid-template-columns:140px 130px 1fr 80px;padding:10px 14px;align-items:center;gap:10px;border-top:1px solid var(--border-light);font-size:13.5px}
 .record-row input,.record-row select{padding:8px 10px;font-size:13px;border-radius:8px}
 .record-row .actions{display:flex;gap:5px;justify-content:flex-end}
-
-.stage-list{border:1px solid var(--border-light);border-radius:var(--radius);overflow:hidden}
 .stage-item{padding:14px 16px;border-bottom:1px solid var(--border-light);background:var(--surface)}
 .stage-item:last-child{border-bottom:none}
 .stage-item-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .stage-item-head h4{font-size:14px;font-weight:600;color:var(--primary);display:flex;align-items:center;gap:8px}
 .stage-item-head .stage-num{width:24px;height:24px;background:var(--primary);color:#fff;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
 .stage-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
-
 .scheme-card{background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between;gap:12px;transition:border-color .2s}
 .scheme-card:hover{border-color:var(--primary)}
 .scheme-info h4{font-size:14px;font-weight:600;margin-bottom:3px}
 .scheme-info p{font-size:12px;color:var(--text-muted)}
-.scheme-actions{display:flex;gap:6px;flex-shrink:0}
-
 .upload-zone{border:2px dashed var(--border);border-radius:var(--radius-lg);padding:36px 20px;text-align:center;cursor:pointer;transition:all .2s;background:var(--surface-variant)}
 .upload-zone:hover,.upload-zone.dragover{border-color:var(--primary);background:var(--primary-bg)}
 .upload-zone .icon{font-size:42px;margin-bottom:10px;opacity:.5}
 .upload-zone p{font-size:14px;color:var(--text-secondary);margin-bottom:4px}
 .upload-zone .sub{font-size:12px;color:var(--text-muted)}
-
 .ocr-result{background:#FFFBEB;border:1px solid #FDE68A;border-radius:var(--radius);padding:16px;margin-top:14px}
 .ocr-result h4{font-size:14px;font-weight:600;margin-bottom:8px;color:#92400E}
 .ocr-text{font-size:13px;line-height:1.7;white-space:pre-wrap;word-break:break-all;max-height:300px;overflow-y:auto;font-family:'Courier New',monospace;background:#FFF;padding:12px;border-radius:8px;border:1px solid #FDE68A}
-
 .loading-overlay{position:fixed;inset:0;background:rgba(255,255,255,.88);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:999;opacity:0;visibility:hidden;transition:all .3s}
 .loading-overlay.show{opacity:1;visibility:visible}
 .spinner{width:40px;height:40px;border:4px solid var(--border);border-top-color:var(--primary);border-radius:50%;animation:spin .6s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
-
 .toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--text);color:#fff;padding:13px 26px;border-radius:50px;font-size:13.5px;font-weight:500;box-shadow:var(--shadow-lg);z-index:9999;transition:transform .3s cubic-bezier(.34,1.56,.64,1);max-width:90vw;text-align:center}
 .toast.show{transform:translateX(-50%) translateY(0)}
-
 .checkbox-group{display:flex;align-items:center;gap:7px;cursor:pointer;padding:5px 0}
 .checkbox-group input{width:17px;height:17px;accent-color:var(--primary);cursor:pointer}
 .checkbox-group label{font-size:13.5px;color:var(--text-secondary);cursor:pointer}
-
 .section-title{font-size:14px;font-weight:700;color:var(--text);margin:16px 0 10px;display:flex;align-items:center;gap:8px}
 .section-title::after{content:'';flex:1;height:1px;background:var(--border)}
-
 .empty-state{text-align:center;padding:40px 20px;color:var(--text-muted)}
 .empty-state .icon{font-size:40px;margin-bottom:12px;opacity:.4}
 
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);z-index:2000;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all .25s}
+.modal-overlay.show{opacity:1;visibility:visible}
+.modal-box{background:var(--surface);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);width:92%;max-width:720px;max-height:80vh;overflow-y:auto;padding:24px;transform:scale(.95);transition:transform .25s}
+.modal-overlay.show .modal-box{transform:scale(1)}
+.modal-title{font-size:17px;font-weight:700;margin-bottom:6px;color:var(--text)}
+.modal-desc{font-size:13px;color:var(--text-muted);margin-bottom:18px}
+.confirm-table{width:100%;border-collapse:collapse;margin-top:12px}
+.confirm-table th{background:var(--surface-variant);padding:10px 12px;text-align:left;font-size:12px;font-weight:600;color:var(--text-secondary);border-bottom:2px solid var(--border)}
+.confirm-table td{padding:10px 12px;border-bottom:1px solid var(--border-light);font-size:13px}
+.confirm-table tr:hover td{background:var(--primary-bg)}
+.type-select{padding:6px 10px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;cursor:pointer;background:var(--surface);color:var(--text)}
+.type-select option.repay{color:var(--error)}
+.type-select option.advance{color:var(--success)}
+.modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px;padding-top:14px;border-top:1px solid var(--border-light)}
+
+.quick-ocr-zone{border:2px dashed var(--primary);border-radius:var(--radius-lg);padding:20px;text-align:center;cursor:pointer;transition:all .2s;background:var(--primary-bg);margin-top:10px}
+.quick-ocr-zone:hover{border-color:var(--primary-light);background:#E0E7FF}
+
 @media(max-width:768px){
-.container{padding:12px 14px}
-.app-header{padding:14px 16px}
-.header-title{font-size:16px}
-.form-grid{grid-template-columns:1fr;gap:12px}
-.card-body{padding:14px}
-.card-header{padding:12px 14px}
+.container{padding:12px 14px}.app-header{padding:14px 16px}.header-title{font-size:16px}
+.form-grid{grid-template-columns:1fr;gap:12px}.card-body{padding:14px}.card-header{padding:12px 14px}
 .record-list-head,.record-row{grid-template-columns:1fr 1fr 1fr auto;gap:6px;font-size:12.5px}
-.stage-form{grid-template-columns:1fr}
-.result-summary{grid-template-columns:repeat(2,1fr)}
-.hero-card{padding:20px}
-.hero-card h2{font-size:18px}
-.btn{padding:9px 16px;font-size:13px}
-.row-detail-grid{grid-template-columns:1fr 1fr}
+.stage-form{grid-template-columns:1fr}.result-summary{grid-template-columns:repeat(2,1fr)}
+.hero-card{padding:20px}.hero-card h2{font-size:18px}.btn{padding:9px 16px;font-size:13px}
+.row-detail-grid{grid-template-columns:1fr 1fr}.modal-box{width:96%;padding:16px}
+.confirm-table{font-size:12px}
 }
 </style>
 </head>
 <body>
 
 <header class="app-header"><div class="header-content">
-<div class="header-icon">&#x2696;</div><div><div class="header-title">CourtClaw 利息计算器</div><div class="header-subtitle">专业法律利息计算 · OCR识别 · 分段计息 · Excel导出</div></div></div></header>
+<div class="header-icon">⚖️</div><div><div class="header-title">CourtClaw 利息计算器</div><div class="header-subtitle">专业法律利息计算 · OCR识别 · 分段计息 · Excel导出</div></div></div></header>
 
 <main class="container">
 
 <div class="tabs-nav" id="tabNav">
-<button class="tab-btn active" data-tab="calc">&#x1F9EA; 计算</button>
-<button class="tab-btn" data-tab="scheme">&#x1F4CB; 公式管理</button>
-<button class="tab-btn" data-tab="import">&#x1F4E5; 导入识别</button>
+<button class="tab-btn active" data-tab="calc" onclick="switchTab('calc')" id="tabBtn-calc">🧮 计算</button>
+<button class="tab-btn" data-tab="scheme" onclick="switchTab('scheme')" id="tabBtn-scheme">📋 公式管理</button>
+<button class="tab-btn" data-tab="import" onclick="switchTab('import')" id="tabBtn-import">📥 导入识别</button>
 </div>
 
-<!-- ========== TAB 1: 计算 ========== -->
+<!-- TAB 1: 计算 -->
 <div class="tab-panel active" id="panel-calc">
 
 <div class="hero-card">
 <h2>离线利息测算工作台</h2>
 <p>支持分段计息规则时间轴、OCR流水导入、公式保存复用、Excel导出留档</p>
 <div class="hero-pills">
-<div class="hero-pill">&#x26A1; <span id="statusPill">准备就绪</span></div>
-<div class="hero-pill">&#x1F4CA; 结果行数: <b id="rowCountPill">0</b> 行</div>
-<div class="hero-pill">&#x1F4DA; 已存公式: <b id="schemeCountPill">0</b> 个</div>
-<div class="hero-pill">&#x1F4C5; 时间轴阶段: <b id="stageCountPill">0</b> 段</div>
+<div class="hero-pill">⚡ <span id="statusPill">准备就绪</span></div>
+<div class="hero-pill">📊 结果行数: <b id="rowCountPill">0</b> 行</div>
+<div class="hero-pill">📚 已存公式: <b id="schemeCountPill">0</b> 个</div>
+<div class="hero-pill">📅 时间轴阶段: <b id="stageCountPill">0</b> 段</div>
 </div>
 <div class="hero-actions">
-<button class="btn btn-white" onclick="doCalculate()">&#x25B6; 本地试算</button>
-<button class="btn btn-outline-white" onclick="showSchemeImport()">&#x1F4E5; 导入公式</button>
-<button class="btn btn-outline-white" onclick="exportExcel()">&#x1F4C4; 导出 Excel</button>
+<button class="btn btn-white" onclick="doCalculate()">▶ 本地试算</button>
+<button class="btn btn-outline-white" onclick="showTab('scheme')">📥 导入公式</button>
+<button class="btn btn-outline-white" onclick="exportExcel()">📄 导出 Excel</button>
 </div>
 </div>
 
-<div class="card" id="quickImportCard" style="display:none"><div class="card-body"><div id="quickChipsArea" style="display:flex;flex-wrap:wrap;gap:8px"></div></div></div>
+<!-- 快速 OCR 导入区 -->
+<div class="card"><div class="card-header"><h3><span class="icon">🔍</span>快速导入（OCR / 文件）</h3></div><div class="card-body">
+<div class="quick-ocr-zone" id="quickOcrZone" onclick="document.getElementById('quickOcrFileInput').click()">
+<div class="icon">📷</div>
+<p>点击上传图片 / PDF 进行 OCR 识别，或上传 CSV/Excel 文件</p>
+<p class="sub">支持识别银行流水、借条、还款记录等。识别后可逐条确认类型（还款 or 借款）</p>
+<input type="file" id="quickOcrFileInput" accept=".png,.jpg,.jpeg,.bmp,.webp,.pdf,.csv,.txt,.xlsx" style="display:none" onchange="handleQuickImport(event)">
+</div>
+<div id="quickOcrProgress" style="margin-top:14px;display:none;text-align:center;padding:16px">
+<div class="spinner"></div><p style="margin-top:8px;color:var(--text-secondary)" id="quickOcrStatusText">正在处理...</p>
+</div>
+<div id="quickOcrResultArea" style="margin-top:14px;display:none"></div>
+</div></div>
 
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F4CB;</span>基本信息</h3></div><div class="card-body">
+<div class="card"><div class="card-header"><h3><span class="icon">📋</span>基本信息</h3></div><div class="card-body">
 <div class="form-grid">
 <div class="form-group"><label class="form-label">方案名称</label><input type="text" id="schemeName" value="我的常用公式" placeholder="给这个计算方案起个名字"></div>
-<div class="form-group"><label class="form-label">本金金额 <span class="hint">(元)</span></label><input type="number" id="principal" value="100000" step="0.01"></div>
+<div class="form-group"><label class="form-label">本金金额 (元)</label><input type="number" id="principal" value="100000" step="0.01"></div>
 <div class="form-group"><label class="form-label">起算日期</label><input type="date" id="startDate" value="2021-01-01"></div>
 <div class="form-group"><label class="form-label">截止日期</label><input type="date" id="endDate" value="2024-12-31"></div>
 <div class="form-group full"><label class="form-label">备注</label><input type="text" id="notes" placeholder="记录案件背景、合同约定或内部说明"></div>
 </div></div></div>
 
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F522;</span>计息公式</h3></div><div class="card-body">
+<div class="card"><div class="card-header"><h3><span class="icon">🔢</span>计息公式</h3></div><div class="card-body">
 <div class="form-grid">
 <div class="form-group"><label class="form-label">计息类型</label><select id="interestKind"><option value="normal">普通计息</option><option value="doubled_debt_interest">迟延履行期间加倍债务利息</option></select></div>
-<div class="form-group" id="doubledGroup" style="display:none"><label class="form-label">日万分比 <span class="hint">(‱)</span></label><input type="number" id="doubledDailyRate" value="1.75" step="0.01"></div>
+<div class="form-group" id="doubledGroup" style="display:none"><label class="form-label">日万分比 (‱)</label><input type="number" id="doubledDailyRate" value="1.75" step="0.01"></div>
 <div class="form-group"><label class="form-label">还款冲抵规则</label><select id="repaymentMode"><option value="interest_first">先息后本</option><option value="principal_first">先本后息</option><option value="proportional">按比例分配</option></select></div>
 <div class="form-group"><label class="form-label">首尾算法（端点模式）</label><select id="endpointMode"><option value="include_start_exclude_end">算头不算尾</option><option value="include_both">两头都算</option><option value="exclude_both">两头都不算</option><option value="exclude_start_include_end">不算头算尾</option></select></div>
 <div class="form-group"><label class="form-label">天数基准</label><select id="dayBasis"><option value="360">360天/年</option><option value="365">365天/年</option></select></div>
 </div></div></div>
 
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F4CA;</span>利率规则</h3><button class="btn btn-secondary btn-sm" onclick="addTimelineStage()">+ 添加分段阶段</button></div><div class="card-body">
+<div class="card"><div class="card-header"><h3><span class="icon">📊</span>利率规则</h3><button class="btn btn-secondary btn-sm" onclick="addTimelineStage()">+ 添加分段阶段</button></div><div class="card-body">
 <p style="font-size:12.5px;color:var(--text-muted);margin-bottom:12px">默认规则适用于所有时间段。如需分段计息（例如某日期前固定利率，之后改为LPR），请添加时间轴阶段。</p>
 <div id="defaultRuleForm">
 <div class="form-grid">
 <div class="form-group"><label class="form-label">利率来源</label><select id="rateSource" onchange="onRateSourceChange()"><option value="lpr_5y">5年期以上LPR</option><option value="lpr_1y">1年期LPR</option><option value="benchmark_loan">贷款基准利率</option><option value="fixed">固定利率</option><option value="custom_schedule">自定义分段</option></select></div>
-<div class="form-group" id="fixedRateGroup" style="display:none"><label class="form-label">年利率 <span class="hint">(%)</span></label><input type="number" id="fixedRate" step="0.01" placeholder="例: 10.8"></div>
-<div class="form-group" id="customRateGroup" style="display:none"><label class="form-label">自定义利率表 <span class="hint">(每行: 日期,利率%)</span></label><textarea id="customRates" rows="3" placeholder="2021-01-01, 10.8&#10;2023-01-01, 9.0"></textarea></div>
+<div class="form-group" id="fixedRateGroup" style="display:none"><label class="form-label">年利率 (%)</label><input type="number" id="fixedRate" step="0.01" placeholder="例: 10.8"></div>
+<div class="form-group" id="customRateGroup" style="display:none"><label class="form-label">自定义利率表 (每行: 日期,利率%)</label><textarea id="customRates" rows="3" placeholder="2021-01-01, 10.8&#10;2023-01-01, 9.0"></textarea></div>
 <div class="form-group"><label class="form-label">调整方式</label><select id="adjustmentMode"><option value="none">不调整</option><option value="basis_points">BP加点</option><option value="multiplier">倍数</option><option value="add_fixed">固定加点</option></select></div>
 <div class="form-group"><label class="form-label">调整值</label><input type="number" id="adjustmentValue" value="0" step="0.01"></div>
 <div class="form-group"><div class="checkbox-group"><input type="checkbox" id="applyRateCap" onchange="document.getElementById('rateCapGroup').style.display=this.checked?'':'none'"><label>启用利率上限</label></div></div>
-<div class="form-group" id="rateCapGroup" style="display:none"><label class="form-label">上限 <span class="hint">(%)</span></label><input type="number" id="rateCapPercent" step="0.01" placeholder="例: 24"></div>
+<div class="form-group" id="rateCapGroup" style="display:none"><label class="form-label">上限 (%)</label><input type="number" id="rateCapPercent" step="0.01" placeholder="例: 24"></div>
 <div class="form-group"><label class="form-label">保护上限参考倍数</label><input type="number" id="protectionMultiplier" value="4" step="0.1"></div>
 </div>
 </div>
 <div id="timelineStagesArea" style="margin-top:14px"></div>
 </div></div>
 
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F4B0;</span>还款明细</h3><div class="btn-group"><button class="btn btn-primary btn-sm" onclick="addRepaymentRow()">+ 新增一条</button><button class="btn btn-secondary btn-sm" onclick="clearRepayments()">清空</button></div></div><div class="card-body">
+<div class="card"><div class="card-header"><h3><span class="icon">💰</span>还款明细</h3><div class="btn-group"><button class="btn btn-primary btn-sm" onclick="addRepaymentRow()">+ 新增一条</button><button class="btn btn-secondary btn-sm" onclick="clearRepayments()">清空</button></div></div><div class="card-body">
 <div class="record-list" id="repaymentList">
 <div class="record-list-head"><span>还款日期</span><span>金额 (元)</span><span>备注</span><span>操作</span></div>
 <div id="repaymentRows"></div>
 </div>
-<p style="font-size:12px;color:var(--text-muted);margin-top:8px">&#x1F4A1; 提示：也可以从「导入」标签页使用 OCR 识别图片/PDF 或导入 CSV/Excel 文件自动填充</p>
 </div></div>
 
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F3E6;</span>追加出借</h3><div class="btn-group"><button class="btn btn-primary btn-sm" onclick="addAdvanceRow()">+ 新增一条</button><button class="btn btn-secondary btn-sm" onclick="clearAdvances()">清空</button></div></div><div class="card-body">
+<div class="card"><div class="card-header"><h3><span class="icon">🏦</span>追加出借</h3><div class="btn-group"><button class="btn btn-primary btn-sm" onclick="addAdvanceRow()">+ 新增一条</button><button class="btn btn-secondary btn-sm" onclick="clearAdvances()">清空</button></div></div><div class="card-body">
 <div class="record-list" id="advanceList">
 <div class="record-list-head"><span>出借日期</span><span>金额 (元)</span><span>备注</span><span>操作</span></div>
 <div id="advanceRows"></div>
 </div>
 </div></div>
 
-<div style="margin:20px 0;text-align:center"><button class="btn btn-primary" onclick="doCalculate()" style="padding:16px 48px;font-size:17px;border-radius:14px">&#x1F9EA; 开始计算</button></div>
+<div style="margin:20px 0;text-align:center"><button class="btn btn-primary" onclick="doCalculate()" style="padding:16px 48px;font-size:17px;border-radius:14px">🧮 开始计算</button></div>
 
-<div class="card" id="resultCard" style="display:none"><div class="card-header"><h3><span class="icon">&#x1F4C8;</span>计算结果</h3><div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="exportExcel()">导出 Excel</button><button class="btn btn-secondary btn-sm" onclick="copyResult()">复制结果</button></div></div><div class="card-body">
+<div class="card" id="resultCard" style="display:none"><div class="card-header"><h3><span class="icon">📈</span>计算结果</h3><div class="btn-group"><button class="btn btn-secondary btn-sm" onclick="exportExcel()">导出 Excel</button><button class="btn btn-secondary btn-sm" onclick="copyResult()">复制结果</button></div></div><div class="card-body">
 <div class="result-summary" id="summaryCards"></div>
-<div class="filter-chips" id="filterChips"></div>
+<div id="filterChipsArea"></div>
 <div style="display:flex;gap:8px;margin-bottom:12px">
-<button class="btn btn-secondary btn-sm" onclick="expandAllRows()">全部展开 &#x25BC;</button>
-<button class="btn btn-secondary btn-sm" onclick="collapseAllRows()">全部折叠 &#x25B2;</button>
+<button class="btn btn-secondary btn-sm" onclick="expandAllRows()">全部展开 ▼</button>
+<button class="btn btn-secondary btn-sm" onclick="collapseAllRows()">全部折叠 ▲</button>
 </div>
 <div id="resultArea"></div>
 </div></div>
-
 </div><!-- end panel-calc -->
 
-<!-- ========== TAB 2: 公式管理 ========== -->
+<!-- TAB 2: 公式管理 -->
 <div class="tab-panel" id="panel-scheme">
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F4BE;</span>保存当前公式</h3></div><div class="card-body">
+<div class="card"><div class="card-header"><h3><span class="icon">💾</span>保存当前公式</h3></div><div class="card-body">
 <div class="form-group"><label class="form-label">公式名称</label><input type="text" id="saveSchemeName" value="我的常用公式" placeholder="输入一个容易辨识的名称"></div>
-<div class="btn-group" style="margin-top:10px"><button class="btn btn-primary" onclick="saveCurrentScheme()">&#x1F4BE; 保存当前参数为公式</button></div>
+<div class="btn-group" style="margin-top:10px"><button class="btn btn-primary" onclick="saveCurrentScheme()">💾 保存当前参数为公式</button></div>
 </div></div>
-
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F4DA;</span>已保存的公式 (<span id="savedCount">0</span>)</h3><button class="btn btn-danger btn-sm" onclick="clearAllSchemes()">清空全部</button></div><div class="card-body">
-<div id="schemeListArea"><div class="empty-state"><div class="icon">&#x1F4ED;</div><p>还没有保存的公式</p><p class="sub">在「计算」标签页设置好参数后，点击保存按钮即可</p></div></div>
+<div class="card"><div class="card-header"><h3><span class="icon">📚</span>已保存的公式 (<span id="savedCount">0</span>)</h3><button class="btn btn-danger btn-sm" onclick="clearAllSchemes()">清空全部</button></div><div class="card-body">
+<div id="schemeListArea"><div class="empty-state"><div class="icon">📭</div><p>还没有保存的公式</p><p style="font-size:12px;color:var(--text-muted)">在「计算」标签页设置好参数后，点击保存按钮即可</p></div></div>
 </div></div>
-</div><!-- end panel-scheme -->
+</div>
 
-<!-- ========== TAB 3: 导入识别 ========== -->
+<!-- TAB 3: 导入识别 -->
 <div class="tab-panel" id="panel-import">
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F4C1;</span>结构化文件导入</h3></div><div class="card-body">
-<div class="upload-zone" id="csvUploadZone" onclick="document.getElementById('csvFileInput').click()">
-<div class="icon">&#x1F4CA;</div><p>点击或拖拽上传 CSV / TXT / Excel 文件</p><p class="sub">支持包含日期、金额列的表格文件，自动识别表头并解析</p>
+<div class="card"><div class="card-header"><h3><span class="icon">📁</span>结构化文件导入</h3></div><div class="card-body">
+<div class="upload-zone" onclick="document.getElementById('csvFileInput').click()">
+<div class="icon">📊</div><p>点击或拖拽上传 CSV / TXT / Excel 文件</p><p class="sub">支持包含日期、金额列的表格文件，自动识别表头并解析</p>
 <input type="file" id="csvFileInput" accept=".csv,.txt,.xlsx" style="display:none" onchange="handleStructuredImport(event)">
 </div>
 <div id="structuredResult" style="margin-top:14px;display:none"></div>
 </div></div>
-
-<div class="card"><div class="card-header"><h3><span class="icon">&#x1F50D;</span>OCR 图片 / PDF 识别</h3></div><div class="card-body">
-<div class="upload-zone" id="ocrUploadZone" onclick="document.getElementById('ocrFileInput').click()">
-<div class="icon">&#x1F5BC;&#xFE0F;</div><p>点击或拖拽上传图片或 PDF 文件</p><p class="sub">支持 PNG/JPG/JPEG/BMP/WebP/PDF，使用 AI 自动识别文字内容</p>
+<div class="card"><div class="card-header"><h3><span class="icon">🔍</span>OCR 图片 / PDF 识别</h3></div><div class="card-body">
+<div class="upload-zone" onclick="document.getElementById('ocrFileInput').click()">
+<div class="icon">🖼️</div><p>点击或拖拽上传图片或 PDF 文件</p><p class="sub">支持 PNG/JPG/JPEG/BMP/WebP/PDF，使用 AI 自动识别文字内容</p>
 <input type="file" id="ocrFileInput" accept=".png,.jpg,.jpeg,.bmp,.webp,.pdf" style="display:none" onchange="handleOCRImport(event)">
 </div>
 <div id="ocrProgress" style="margin-top:14px;display:none;text-align:center;padding:20px">
 <div class="spinner"></div><p style="margin-top:10px;color:var(--text-secondary)" id="ocrStatusText">正在识别中...</p>
 </div>
 <div id="ocrResultArea" style="margin-top:14px;display:none"><div class="ocr-result">
-<h4>&#x1F4DD; 识别结果</h4>
+<h4>📝 识别结果</h4>
 <div class="ocr-text" id="ocrTextDisplay"></div>
-<div class="btn-group" style="margin-top:12px"><button class="btn btn-primary btn-sm" onclick="importOcrToRepayments()">&#x2705; 导入到还款明细</button><button class="btn btn-secondary btn-sm" onclick="copyOcrText()">&#x1F4CB; 复制文本</button></div>
+<div class="btn-group" style="margin-top:12px"><button class="btn btn-primary btn-sm" onclick="importOcrToRepaymentsWithConfirm()">✅ 确认并导入</button><button class="btn btn-secondary btn-sm" onclick="copyOcrText()">📋 复制文本</button></div>
 </div></div>
 </div></div>
-</div><!-- end panel-import -->
+</div>
 
 </main>
 
-<footer style="text-align:center;padding:24px;color:var(--text-muted);font-size:12.5px">CourtClaw 利息计算器 · 网页版 v2.0 · 支持OCR识别 · 分段计息 · Excel导出</footer>
+<footer style="text-align:center;padding:24px;color:var(--text-muted);font-size:12.5px">CourtClaw 利息计算器 · 网页版 v3.0 · OCR识别 · 分段计息 · 智能确认 · Excel导出</footer>
 
 <div class="loading-overlay" id="loadingOverlay"><div class="spinner"></div></div>
 <div class="toast" id="toast"></div>
 
-<script>
-(function(){
-"use strict";
+<!-- 确认弹窗 -->
+<div class="modal-overlay" id="confirmModal">
+<div class="modal-box">
+<h3 class="modal-title">✅ 请确认导入的记录</h3>
+<p class="modal-desc">请检查每条记录的类型。<strong>还款方出示</strong>的证据：正数为还款、负数为借款；<strong>借款方出示</strong>则相反。你也可以手动调整每条记录的类型。</p>
+<table class="confirm-table" id="confirmTable">
+<thead><tr><th>#</th><th>日期</th><th>金额</th><th>原始备注</th><th>类型</th></tr></thead>
+<tbody id="confirmTableBody"></tbody>
+</table>
+<div class="modal-actions">
+<button class="btn btn-secondary" onclick="closeConfirmModal()">取消</button>
+<button class="btn btn-primary" onclick="confirmImportRecords()">✓ 确认导入</button>
+</div>
+</div>
+</div>
 
-// ==================== LPR & 基准利率历史数据 ====================
+<script>
+"use strict"
+
+/* ===== LPR & 基准利率历史数据 ===== */
 var LPR_1Y=[[2019,8,20,4.25],[2019,9,20,4.20],[2019,11,20,4.15],[2020,2,20,4.05],[2020,4,20,3.85],[2021,12,20,3.80],[2022,1,20,3.70],[2022,8,22,3.65],[2023,6,20,3.55],[2023,8,21,3.45],[2024,7,22,3.35],[2024,10,21,3.10]];
 var LPR_5Y=[[2019,8,20,4.85],[2019,11,20,4.80],[2020,2,20,4.75],[2020,4,20,4.65],[2022,1,20,4.60],[2022,5,20,4.45],[2022,8,22,4.30],[2023,6,20,4.20],[2024,2,20,3.95],[2024,7,22,3.85],[2024,10,21,3.60]];
 var BENCHMARK=[[2012,7,6,6.00],[2014,11,22,5.60],[2015,3,1,5.35],[2015,5,11,5.10],[2015,6,28,4.85],[2015,8,26,4.60],[2015,10,24,4.35]];
 
-// ==================== 全局状态 ====================
+/* ===== 全局状态 ===== */
 var repaymentItems = [];
 var advanceItems = [];
 var timelineStages = [];
 var currentFilter = 'all';
-var currentSortAsc = true;
 var lastResult = null;
 var ocrTextCache = '';
 var expandedRows = new Set();
 var stageIdCounter = 0;
-var _structuredParsed = [];
+var pendingImportRecords = [];
 
-// ==================== 工具函数 ====================
+/* ===== 工具函数 ===== */
 function roundMoney(v) { return Math.round(v * 100) / 100; }
-function parseDate(s) { var p=s.trim().split('-').map(Number); return new Date(p[0],p[1]-1,p[2]); }
+function parseDate(s) { if(!s) return new Date(NaN); var p=s.trim().split(/[-/.]/).map(Number); return new Date(p[0],p[1]-1,p[2]||1); }
 function fmtDate(d) { if(!d||isNaN(d.getTime())) return ''; return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
 function fmtMoney(n) { return n.toLocaleString('zh-CN',{minimumFractionDigits:2,maximumFractionDigits:2}); }
 function $(id) { return document.getElementById(id); }
@@ -343,61 +354,38 @@ function getRateForDate(targetDate, source, customRates, fixedRateVal) {
         case 'benchmark_loan': history = BENCHMARK; break;
         case 'custom_schedule':
             var m = null;
-            for(var i = 0; i < customRates.length; i++) {
-                if(!customRates[i].date || customRates[i].date <= targetDate) m = customRates[i].rate;
-                else break;
-            }
+            for(var i = 0; i < customRates.length; i++) { if(!customRates[i].date || customRates[i].date <= targetDate) m = customRates[i].rate; else break; }
             return m !== null ? m : 0;
         case 'fixed': return fixedRateVal !== null ? fixedRateVal : 0;
         default: history = LPR_5Y;
     }
     var mr = null;
-    for(var i = 0; i < history.length; i++) {
-        var rd = new Date(history[i][0], history[i][1]-1, history[i][2]);
-        if(rd <= targetDate) mr = history[i][2];
-        else break;
-    }
+    for(var i = 0; i < history.length; i++) { var rd = new Date(history[i][0], history[i][1]-1, history[i][2]); if(rd <= targetDate) mr = history[i][2]; else break; }
     return mr !== null ? mr : 0;
 }
 
 function adjustRate(baseRate, mode, val) {
-    switch(mode) {
-        case 'basis_points': return baseRate + val / 100;
-        case 'multiplier': return baseRate * val;
-        case 'add_fixed': return baseRate + val;
-        default: return baseRate;
-    }
+    switch(mode) { case 'basis_points': return baseRate + val / 100; case 'multiplier': return baseRate * val; case 'add_fixed': return baseRate + val; default: return baseRate; }
 }
 
-function showToast(msg) {
-    var t = $('toast');
-    t.textContent = msg;
-    t.classList.add('show');
-    setTimeout(function(){ t.classList.remove('show'); }, 2500);
-}
+function showToast(msg) { var t = $('toast'); t.textContent = msg; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 2500); }
 function showLoading(show) { $('loadingOverlay').classList.toggle('show', show); }
 
-// ==================== Tab 切换 ====================
-function initTabs() {
+/* ===== Tab 切换 ===== */
+function switchTab(tabId) {
     var btns = document.querySelectorAll('.tab-btn');
-    for(var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener('click', function() {
-            for(var j = 0; j < btns.length; j++) btns[j].classList.remove('active');
-            var panels = document.querySelectorAll('.tab-panel');
-            for(var k = 0; k < panels.length; k++) panels[k].classList.remove('active');
-            this.classList.add('active');
-            var pid = 'panel-' + this.getAttribute('data-tab');
-            var targetPanel = document.getElementById(pid);
-            if(targetPanel) targetPanel.classList.add('active');
-        });
-    }
+    for(var j = 0; j < btns.length; j++) btns[j].classList.remove('active');
+    var panels = document.querySelectorAll('.tab-panel');
+    for(var k = 0; k < panels.length; k++) panels[k].classList.remove('active');
+    $('tabBtn-' + tabId).classList.add('active');
+    var p = $('panel-' + tabId);
+    if(p) p.classList.add('active');
 }
+function showTab(tabId) { switchTab(tabId); }
 
-// ==================== 动态显示隐藏 ====================
+/* ===== 动态显示隐藏 ===== */
 function initDynamicFields() {
-    $('interestKind').addEventListener('change', function() {
-        $('doubledGroup').style.display = this.value === 'doubled_debt_interest' ? '' : 'none';
-    });
+    $('interestKind').addEventListener('change', function() { $('doubledGroup').style.display = this.value === 'doubled_debt_interest' ? '' : 'none'; });
 }
 function onRateSourceChange() {
     var s = $('rateSource').value;
@@ -405,11 +393,11 @@ function onRateSourceChange() {
     $('customRateGroup').style.display = s === 'custom_schedule' ? '' : 'none';
 }
 
-// ==================== 时间轴阶段管理 ====================
+/* ===== 时间轴阶段管理 ===== */
 function addTimelineStage(data) {
     stageIdCounter++;
     var id = stageIdCounter;
-    var stage = data || { effectiveDate: '', label: '\u9636\u6BB5' + id, rateSource: 'lpr_5y', fixedRate: '', customRates: '',
+    var stage = data || { effectiveDate: '', label: '阶段' + id, rateSource: 'lpr_5y', fixedRate: '', customRates: '',
         adjustmentMode: 'none', adjustmentValue: 0, interestKind: 'normal', dayBasis: 360,
         endpointMode: 'include_start_exclude_end', repaymentMode: 'interest_first',
         applyRateCap: false, rateCapPercent: '' };
@@ -421,278 +409,179 @@ function addTimelineStage(data) {
     renderTimelineStages();
     updateStageCount();
 }
-function removeTimelineStage(id) {
-    timelineStages = timelineStages.filter(function(s){ return s._id !== id; });
-    renderTimelineStages();
-    updateStageCount();
+function removeTimelineStage(id) { timelineStages = timelineStages.filter(function(s){ return s._id !== id; }); renderTimelineStages(); updateStageCount(); }
+function updateStageField(id, field, value) {
+    for(var i = 0; i < timelineStages.length; i++) {
+        if(timelineStages[i]._id === id) { if(field === 'dayBasis') timelineStages[i][field] = parseInt(value); else timelineStages[i][field] = value; break; }
+    }
 }
+function toggleStageField(id, divSuffix, show) { var el = document.getElementById(divSuffix + '-' + id); if(el) el.style.display = show ? '' : 'none'; }
 function renderTimelineStages() {
     var area = $('timelineStagesArea');
     if(!timelineStages.length) { area.innerHTML = ''; return; }
-    var html = '<div class="section-title">&#x1F4C5; \u89C4\u5219\u65F6\u95F4\u8F74\u9636\u6BB5</div>';
+    var html = '<div class="section-title">📅 规则时间轴阶段</div>';
     for(var i = 0; i < timelineStages.length; i++) {
         var s = timelineStages[i];
         var fidShow = s.rateSource === 'fixed' ? '' : 'none';
         var cidShow = s.rateSource === 'custom_schedule' ? '' : 'none';
-        var rcShow = s.applyRateCap ? '' : 'none';
         html += '<div class="stage-item" id="stage-' + s._id + '">' +
-'<div class="stage-item-head"><h4><span class="stage-num">' + (i+1) + '</span>' + (s.label || ('\u9636\u6BB5'+(i+1))) + '</h4>' +
-'<button class="btn btn-danger btn-sm" onclick="removeTimelineStage(' + s._id + ')">\u5220\u9664\u6B64\u9636\u6BB5</button></div>' +
+'<div class="stage-item-head"><h4><span class="stage-num">' + (i+1) + '</span>' + (s.label || ('阶段'+(i+1))) + '</h4>' +
+'<button class="btn btn-danger btn-sm" onclick="removeTimelineStage(' + s._id + ')">删除此阶段</button></div>' +
 '<div class="stage-form">' +
-'<div class="form-group"><label class="form-label">\u751F\u6548\u65E5\u671F</label><input type="date" value="' + (s.effectiveDate||'') + '" onchange="updateStageField(' + s._id + ",\'effectiveDate\',this.value)"></div>' +
-'<div class="form-group"><label class="form-label">\u9636\u6BB5\u540D\u79F0</label><input type="text" value="' + (s.label||'') + '" placeholder="\u9636\u6BB5\u540D\u79F0" onchange="updateStageField(' + s._id + ",\'label\',this.value)"></div>' +
-'<div class="form-group"><label class="form-label">\u5229\u7387\u6765\u6E90</label><select onchange="updateStageField(' + s._id + ",\'rateSource\',this.value);toggleStageField(" + s._id + ",\'fixedRateDiv\',this.value===\'fixed\');toggleStageField(" + s._id + ",\'customRateDiv\',this.value===\'custom_schedule\')">' +
-'<option value="lpr_5y"' + (s.rateSource==='lpr_5y'?' selected':'') + '>5\u5E74\u671F\u4EE5\u4E0ALPR</option>' +
-'<option value="lpr_1y"' + (s.rateSource==='lpr_1y'?' selected':'') + '>1\u5E74\u671FLPR</option>' +
-'<option value="benchmark_loan"' + (s.rateSource==='benchmark_loan'?' selected':'') + '>\u8D37\u6B3E\u57FA\u51C6\u5229\u7387</option>' +
-'<option value="fixed"' + (s.rateSource==='fixed'?' selected':'') + '>\u56FA\u5B9A\u5229\u7387</option>' +
-'<option value="custom_schedule"' + (s.rateSource==='custom_schedule'?' selected':'') + '>\u81EA\u5B9A\u4E49\u5206\u6BB5</option></select></div>' +
-'<div class="form-group" id="stageFixedRate-' + s._id + '" style="display:'+fidShow+'"><label class="form-label">\u56FA\u5B9A\u5E74\u5229\u7387%</label><input type="number" value="' + (s.fixedRate||'') + '" step="0.01" onchange="updateStageField(' + s._id + ",\'fixedRate\',this.value)"></div>' +
-'<div class="form-group" id="stageCustomRate-' + s._id + '" style="display:'+cidShow+'"><label class="form-label">\u81EA\u5B9A\u4E49\u5229\u7387</label><textarea rows="2" placeholder="\u65E5\u671F,\u5229\u7387%" onchange="updateStageField(' + s._id + ",\'customRates\',this.value)">' + (s.customRates||'') + '</textarea></div>' +
-'<div class="form-group"><label class="form-label>\u8C03\u6574\u65B9\u5F0F</label><select onchange="updateStageField(' + s._id + ",\'adjustmentMode\',this.value)">' +
-'<option value="none"' + (s.adjustmentMode==='none'?' selected':'') + '>\u4E0D\u8C03\u6574</option>' +
-'<option value="basis_points"' + (s.adjustmentMode==='basis_points'?' selected':'') + '>BP\u52A0\u70B9</option>' +
-'<option value="multiplier"' + (s.adjustmentMode==='multiplier'?' selected':'') + '>\u500D\u6570</option>' +
-'<option value="add_fixed"' + (s.adjustmentMode==='add_fixed'?' selected':'') + '>\u56FA\u5B9A\u52A0\u70B9</option></select></div>' +
-'<div class="form-group"><label class="form-label">\u8C03\u6574\u503C</label><input type="number" value="' + (s.adjustmentValue||0) + '" step="0.01" onchange="updateStageField(' + s._id + ",\'adjustmentValue\',this.value)"></div>' +
-'<div class="form-group"><label class="form-label">\u5929\u6570\u57FA\u51C6</label><select onchange="updateStageField(' + s._id + ",\'dayBasis\',parseInt(this.value))">' +
-'<option value="360"' + (s.dayBasis===360?' selected':'') + '>360\u5929</option>' +
-'<option value="365"' + (s.dayBasis===365?' selected':'') + '>365\u5929</option></select></div>' +
-'<div class="form-group"><label class="form-label">\u7AEF\u70B9\u6A21\u5F0F</label><select onchange="updateStageField(' + s._id + ",\'endpointMode\',this.value)">' +
-'<option value="include_start_exclude_end"' + (s.endpointMode==='include_start_exclude_end'?' selected':'') + '>\u7B97\u5934\u4E0D\u7B97\u5C3E</option>' +
-'<option value="include_both"' + (s.endpointMode==='include_both'?' selected':'') + '>\u4E24\u5934\u90FD\u7B97</option>' +
-'<option value="exclude_both"' + (s.endpointMode==='exclude_both'?' selected':'') + '>\u4E24\u5934\u90FD\u4E0D\u7B97</option>' +
-'<option value="exclude_start_include_end"' + (s.endpointMode==='exclude_start_include_end'?' selected':'') + '>\u4E0D\u7B97\u5934\u7B97\u5C3E</option></select></div>' +
-'<div class="form-group"><label class="form-label">\u542F\u7528\u5229\u7387\u4E0A\u9650</label><input type="checkbox" ' + (s.applyRateCap?'checked':'') + ' onchange="updateStageField(' + s._id + ",\'applyRateCap\',this.checked);toggleStageField(" + s._id + ",\'rateCapDiv\',this.checked)"></div>' +
-'<div class="form-group" id="stageRateCap-' + s._id + '" style="display:'+rcShow+'"><label class="form-label">\u4E0A\u9650%</label><input type="number" value="' + (s.rateCapPercent||'') + '" step="0.01" onchange="updateStageField(' + s._id + ",\'rateCapPercent\',this.value)"></div>' +
+'<div class="form-group"><label class="form-label">生效日期</label><input type="date" value="' + (s.effectiveDate||'') + '" onchange="updateStageField(' + s._id + ",\'effectiveDate\',this.value)"></div>' +
+'<div class="form-group"><label class="form-label">阶段名称</label><input type="text" value="' + (s.label||'') + '" placeholder="阶段名称" onchange="updateStageField(' + s._id + ",\'label\',this.value)"></div>' +
+'<div class="form-group"><label class="form-label">利率来源</label><select onchange="updateStageField(' + s._id + ",\'rateSource\',this.value);toggleStageField(" + s._id + ",\'stageFixedRate\',this.value===\'fixed\');toggleStageField(" + s._id + ",\'stageCustomRate\',this.value===\'custom_schedule\')">' +
+'<option value="lpr_5y"' + (s.rateSource==='lpr_5y'?' selected':'') + '>5年期以上LPR</option>' +
+'<option value="lpr_1y"' + (s.rateSource==='lpr_1y'?' selected':'') + '>1年期LPR</option>' +
+'<option value="benchmark_loan"' + (s.rateSource==='benchmark_loan'?' selected':'') + '>贷款基准利率</option>' +
+'<option value="fixed"' + (s.rateSource==='fixed'?' selected':'') + '>固定利率</option>' +
+'<option value="custom_schedule"' + (s.rateSource==='custom_schedule'?' selected':'') + '>自定义分段</option></select></div>' +
+'<div class="form-group" id="stageFixedRate-' + s._id + '" style="display:'+fidShow+'"><label class="form-label">固定年利率%</label><input type="number" value="' + (s.fixedRate||'') + '" step="0.01" onchange="updateStageField(' + s._id + ",\'fixedRate\',this.value)"></div>' +
+'<div class="form-group" id="stageCustomRate-' + s._id + '" style="display:'+cidShow+'"><label class="form-label">自定义利率</label><textarea rows="2" placeholder="日期,利率%" onchange="updateStageField(' + s._id + ",\'customRates\',this.value)">' + (s.customRates||'') + '</textarea></div>' +
+'<div class="form-group"><label class="form-label">调整方式</label><select onchange="updateStageField(' + s._id + ",\'adjustmentMode\',this.value)">' +
+'<option value="none"' + (s.adjustmentMode==='none'?' selected':'') + '>不调整</option>' +
+'<option value="basis_points"' + (s.adjustmentMode==='basis_points'?' selected':'') + '>BP加点</option>' +
+'<option value="multiplier"' + (s.adjustmentMode==='multiplier'?' selected':'') + '>倍数</option>' +
+'<option value="add_fixed"' + (s.adjustmentMode==='add_fixed'?' selected':'') + '>固定加点</option></select></div>' +
+'<div class="form-group"><label class="form-label">调整值</label><input type="number" value="' + (s.adjustmentValue||0) + '" step="0.01" onchange="updateStageField(' + s._id + ",\'adjustmentValue\',this.value)"></div>' +
+'<div class="form-group"><label class="form-label">天数基准</label><select onchange="updateStageField(' + s._id + ",\'dayBasis\',parseInt(this.value))">' +
+'<option value="360"' + (s.dayBasis===360?' selected':'') + '>360天</option>' +
+'<option value="365"' + (s.dayBasis===365?' selected':'') + '>365天</option></select></div>' +
+'<div class="form-group"><label class="form-label">端点模式</label><select onchange="updateStageField(' + s._id + ",\'endpointMode\',this.value)">' +
+'<option value="include_start_exclude_end"' + (s.endpointMode==='include_start_exclude_end'?' selected':'') + '>算头不算尾</option>' +
+'<option value="include_both"' + (s.endpointMode==='include_both'?' selected':'') + '>两头都算</option>' +
+'<option value="exclude_both"' + (s.endpointMode==='exclude_both'?' selected':'') + '>两头都不算</option>' +
+'<option value="exclude_start_include_end"' + (s.endpointMode==='exclude_start_include_end'?' selected':'') + '>不算头算尾</option></select></div>' +
 '</div></div>';
     }
     area.innerHTML = html;
 }
-function updateStageField(id, field, val) {
-    for(var i = 0; i < timelineStages.length; i++) {
-        if(timelineStages[i]._id === id) {
-            if(field === 'applyRateCap') timelineStages[i][field] = val;
-            else if(field === 'dayBasis') timelineStages[i][field] = parseInt(val);
-            else timelineStages[i][field] = val;
-            break;
-        }
-    }
-}
-function toggleStageField(id, divSuffix, show) {
-    var el = document.getElementById('stage' + divSuffix + '-' + id);
-    if(el) el.style.display = show ? '' : 'none';
-}
 function updateStageCount() { $('stageCountPill').textContent = String(timelineStages.length); }
 
-// ==================== 还款明细 - 逐条管理 ====================
+/* ===== 还款明细管理 ===== */
 function addRepaymentRow(data) {
     var item = data || { date: $('startDate').value || '2021-01-01', amount: '', note: '' };
     repaymentItems.push({ date: item.date, amount: item.amount, note: item.note });
     renderRepaymentRows();
 }
-function removeRepaymentRow(idx) {
-    if(idx >= 0 && idx < repaymentItems.length) {
-        repaymentItems.splice(idx, 1);
-        renderRepaymentRows();
-    }
-}
-function editRepaymentRow(idx, field, val) {
-    if(idx >= 0 && idx < repaymentItems.length) {
-        repaymentItems[idx][field] = val;
-    }
-}
-function clearRepayments() {
-    repaymentItems = [];
-    renderRepaymentRows();
-    showToast('\u5DF2\u6E05\u7A7A\u8FD8\u6B3E\u660E\u7EC6');
-}
+function removeRepaymentRow(idx) { if(idx >= 0 && idx < repaymentItems.length) { repaymentItems.splice(idx, 1); renderRepaymentRows(); } }
+function editRepaymentRow(idx, field, value) { if(idx >= 0 && idx < repaymentItems.length) { repaymentItems[idx][field] = value; } }
+function clearRepayments() { if(!repaymentItems.length || confirm('确定清空所有还款记录？')) { repaymentItems = []; renderRepaymentRows(); } }
 function renderRepaymentRows() {
-    var container = $('repaymentRows');
-    if(!repaymentItems.length) {
-        container.innerHTML = '<div class="empty-state" style="padding:20px"><div class="icon">&#x1F4DD;</div><p style="font-size:13px">\u6682\u65E0\u8FD8\u6B3E\u8BB0\u5F55</p><p class="sub" style="font-size:12px">\u70B9\u51FB"\u65B0\u589E\u4E00\u6761"\u6DFB\u52A0\u8FD8\u6B3E\u8BB0\u5F55</p></div>';
-        return;
-    }
+    var area = $('repaymentRows');
+    if(!repaymentItems.length) { area.innerHTML = '<div style="padding:16px;text-align:center;color:var(--text-muted);font-size:13px">暂无还款记录，点击上方「新增一条」或使用 OCR 导入</div>'; return; }
     var html = '';
     for(var i = 0; i < repaymentItems.length; i++) {
-        var item = repaymentItems[i];
-        html += '<div class="record-row">' +
-'<input type="date" value="' + (item.date||'') + '" onchange="editRepaymentRow(' + i + ",\'date\',this.value)">' +
-'<input type="number" value="' + (item.amount||'') + '" placeholder="\u91D1\u989D" step="0.01" onchange="editRepaymentRow(' + i + ",\'amount\',parseFloat(this.value)||0)">' +
-'<input type="text" value="' + (item.note||'') + '" placeholder="\u5907\u6CE8" onchange="editRepaymentRow(' + i + ",\'note\',this.value)">' +
-'<div class="actions"><button class="btn btn-danger btn-icon btn-sm" onclick="removeRepaymentRow(' + i + ')" title="\u5220\u9664">&#x2715;</button></div></div>';
+        var r = repaymentItems[i];
+        html += '<div class="record-row"><input type="date" value="'+(r.date||'')+'" onchange="editRepaymentRow('+i+',\'date\',this.value)">' +
+'<input type="number" value="'+(r.amount||'')+'" placeholder="金额" step="0.01" onchange="editRepaymentRow('+i+',\'amount\',this.value)">' +
+'<input type="text" value="'+(r.note||'')+'" placeholder="备注" onchange="editRepaymentRow('+i+',\'note\',this.value)">' +
+'<div class="actions"><button class="btn btn-danger btn-sm" onclick="removeRepaymentRow('+i+')">删除</button></div></div>';
     }
-    container.innerHTML = html;
+    area.innerHTML = html;
 }
 
-// ==================== 追加出借 - 逐条管理 ====================
+/* ===== 追加出借管理 ===== */
 function addAdvanceRow(data) {
     var item = data || { date: $('startDate').value || '2021-01-01', amount: '', note: '' };
     advanceItems.push({ date: item.date, amount: item.amount, note: item.note });
     renderAdvanceRows();
 }
-function removeAdvanceRow(idx) {
-    if(idx >= 0 && idx < advanceItems.length) {
-        advanceItems.splice(idx, 1);
-        renderAdvanceRows();
-    }
-}
-function editAdvanceRow(idx, field, val) {
-    if(idx >= 0 && idx < advanceItems.length) {
-        advanceItems[idx][field] = val;
-    }
-}
-function clearAdvances() {
-    advanceItems = [];
-    renderAdvanceRows();
-    showToast('\u5DF2\u6E05\u7A7A\u8FFD\u52A0\u51FA\u501F');
-}
+function removeAdvanceRow(idx) { if(idx >= 0 && idx < advanceItems.length) { advanceItems.splice(idx, 1); renderAdvanceRows(); } }
+function editAdvanceRow(idx, field, value) { if(idx >= 0 && idx < advanceItems.length) { advanceItems[idx][field] = value; } }
+function clearAdvances() { if(!advanceItems.length || confirm('确定清空所有追加出借记录？')) { advanceItems = []; renderAdvanceRows(); } }
 function renderAdvanceRows() {
-    var container = $('advanceRows');
-    if(!advanceItems.length) {
-        container.innerHTML = '<div class="empty-state" style="padding:20px"><div class="icon">&#x1F3E6;</div><p style="font-size:13px">\u6682\u65E0\u8FFD\u52A0\u51FA\u501F\u8BB0\u5F55</p></div>';
-        return;
-    }
+    var area = $('advanceRows');
+    if(!advanceItems.length) { area.innerHTML = '<div style="padding:16px;text-align:center;color:var(--text-muted);font-size:13px">暂无追加出借记录</div>'; return; }
     var html = '';
     for(var i = 0; i < advanceItems.length; i++) {
-        var item = advanceItems[i];
-        html += '<div class="record-row">' +
-'<input type="date" value="' + (item.date||'') + '" onchange="editAdvanceRow(' + i + ",\'date\',this.value)">' +
-'<input type="number" value="' + (item.amount||'') + '" placeholder="\u91D1\u989D" step="0.01" onchange="editAdvanceRow(' + i + ",\'amount\',parseFloat(this.value)||0)">' +
-'<input type="text" value="' + (item.note||'') + '" placeholder="\u5907\u6CE8" onchange="editAdvanceRow(' + i + ",\'note\',this.value)">' +
-'<div class="actions"><button class="btn btn-danger btn-icon btn-sm" onclick="removeAdvanceRow(' + i + ')" title="\u5220\u9664">&#x2715;</button></div></div>';
+        var r = advanceItems[i];
+        html += '<div class="record-row"><input type="date" value="'+(r.date||'')+'" onchange="editAdvanceRow('+i+',\'date\',this.value)">' +
+'<input type="number" value="'+(r.amount||'')+'" placeholder="金额" step="0.01" onchange="editAdvanceRow('+i+',\'amount\',this.value)">' +
+'<input type="text" value="'+(r.note||'')+'" placeholder="备注" onchange="editAdvanceRow('+i+',\'note\',this.value)">' +
+'<div class="actions"><button class="btn btn-danger btn-sm" onclick="removeAdvanceRow('+i+')">删除</button></div></div>';
     }
-    container.innerHTML = html;
+    area.innerHTML = html;
 }
 
-// ==================== 初始化默认数据 & 启动 ====================
-function initApp() {
-    initTabs();
-    initDynamicFields();
-    addRepaymentRow({ date: '2021-07-01', amount: 10000, note: '\u7B2C\u4E00\u6B21\u8FD8\u6B3E' });
-    addRepaymentRow({ date: '2022-08-22', amount: 15000, note: '\u7B2C\u4E8C\u6B21\u8FD8\u6B3E' });
-    loadSchemes();
-}
-
-// ==================== 核心计算引擎 ====================
+/* ===== 计算核心 ===== */
 function doCalculate() {
     try {
         showLoading(true);
-        var principal = parseFloat($('principal').value);
-        if(!principal || principal <= 0) throw new Error('\u8BF7\u8F93\u5165\u6709\u6548\u7684\u672C\u91D1\u91D1\u989D');
+        var principal = parseFloat($('principal').value) || 0;
         var startDate = parseDate($('startDate').value);
         var endDate = parseDate($('endDate').value);
-        if(startDate >= endDate) throw new Error('\u622A\u6B62\u65E5\u671F\u5FC5\u987B\u665A\u4E8E\u8D77\u7B97\u65E5\u671F');
+        var rateSource = $('rateSource').value;
+        var fixedRateVal = parseFloat($('fixedRate').value) || 0;
+        var adjustmentMode = $('adjustmentMode').value;
+        var adjustmentValue = parseFloat($('adjustmentValue').value) || 0;
+        var interestKind = $('interestKind').value;
+        var doubledDailyRate = parseFloat($('doubledDailyRate').value) || 1.75;
+        var dayBasis = parseInt($('dayBasis').value) || 360;
+        var endpointMode = $('endpointMode').value;
+        var repaymentMode = $('repaymentMode').value;
+        var applyRateCap = $('applyRateCap').checked;
+        var rateCapPercent = parseFloat($('rateCapPercent').value) || null;
+        var protectionMultiplier = parseFloat($('protectionMultiplier').value) || 4;
 
-        var defaultStage = {
-            effectiveDate: new Date(1900,0,1), label: '\u9ED8\u8BA4\u89C4\u5219',
-            rateSource: $('rateSource').value,
-            fixedRate: parseFloat($('fixedRate').value) || null,
-            customRates: parseCustomRates($('customRates').value),
-            adjustmentMode: $('adjustmentMode').value,
-            adjustmentValue: parseFloat($('adjustmentValue').value) || 0,
-            interestKind: $('interestKind').value,
-            doubledDailyRate: parseFloat($('doubledDailyRate').value) || 1.75,
-            dayBasis: parseInt($('dayBasis').value),
-            endpointMode: $('endpointMode').value,
-            repaymentMode: $('repaymentMode').value,
-            applyRateCap: $('applyRateCap').checked,
-            rateCapPercent: $('applyRateCap').checked ? (parseFloat($('rateCapPercent').value) || null) : null
-        };
+        if(principal <= 0) { showToast('请输入有效的本金金额'); showLoading(false); return; }
+        if(isNaN(startDate.getTime()) || isNaN(endDate.getTime())) { showToast('请输入有效的起止日期'); showLoading(false); return; }
+        if(startDate >= endDate) { showToast('截止日期必须晚于起算日期'); showLoading(false); return; }
+
+        var customParsedRates = parseCustomRates($('customRates').value);
+        Date.prototype.isAfter = function(d) { return this > d; };
+
+        var defaultStage = { effectiveDate: new Date(1900,0,1), label: '默认',
+            rateSource: rateSource, fixedRate: fixedRateVal, customRates: customParsedRates,
+            adjustmentMode: adjustmentMode, adjustmentValue: adjustmentValue,
+            interestKind: interestKind, doubledDailyRate: doubledDailyRate,
+            dayBasis: dayBasis, endpointMode: endpointMode, repaymentMode: repaymentMode,
+            applyRateCap: applyRateCap, rateCapPercent: rateCapPercent, _id: 0 };
 
         var stagesArr = [defaultStage];
         for(var si = 0; si < timelineStages.length; si++) {
-            var s = timelineStages[si];
+            var ts = timelineStages[si];
             stagesArr.push({
-                effectiveDate: s.effectiveDate ? parseDate(s.effectiveDate) : startDate,
-                label: s.label, rateSource: s.rateSource,
-                fixedRate: parseFloat(s.fixedRate) || null,
-                customRates: parseCustomRates(s.customRates || ''),
-                adjustmentMode: s.adjustmentMode,
-                adjustmentValue: parseFloat(s.adjustmentValue) || 0,
-                interestKind: s.interestKind || 'normal',
-                doubledDailyRate: 1.75, dayBasis: s.dayBasis || 360,
-                endpointMode: s.endpointMode || 'include_start_exclude_end',
-                repaymentMode: s.repaymentMode || 'interest_first',
-                applyRateCap: s.applyRateCap || false,
-                rateCapPercent: s.applyRateCap ? (parseFloat(s.rateCapPercent) || null) : null
+                effectiveDate: parseDate(ts.effectiveDate) || startDate,
+                label: ts.label || '阶段',
+                rateSource: ts.rateSource, fixedRate: parseFloat(ts.fixedRate)||0,
+                customRates: parseCustomRates(ts.customRates),
+                adjustmentMode: ts.adjustmentMode, adjustmentValue: parseFloat(ts.adjustmentValue)||0,
+                interestKind: ts.interestKind, doubledDailyRate: parseFloat(ts.doubledDailyRate)||doubledDailyRate,
+                dayBasis: parseInt(ts.dayBasis)||dayBasis, endpointMode: ts.endpointMode, repaymentMode: ts.repaymentMode,
+                applyRateCap: ts.applyRateCap, rateCapPercent: parseFloat(ts.rateCapPercent)||null, _id: ts._id
             });
         }
         stagesArr.sort(function(a,b){ return a.effectiveDate - b.effectiveDate; });
 
-        var hasValidStage = false;
-        for(var vi = 0; vi < stagesArr.length; vi++) {
-            if(!stagesArr[vi].effectiveDate.isAfter(startDate)) { hasValidStage = true; break; }
-        }
-        if(!hasValidStage) throw new Error('\u81F3\u5C11\u9700\u8981\u4E00\u4E2A\u9636\u6BB5\u7684\u751F\u6548\u65E5\u4E0D\u665A\u4E8E\u8D77\u7B97\u65E5');
-
-        var protectionMultiplier = parseFloat($('protectionMultiplier').value) || 4;
-
-        var repayments = [];
-        for(var ri = 0; ri < repaymentItems.length; ri++) {
-            var riItem = repaymentItems[ri];
-            if(riItem.date && riItem.amount > 0) repayments.push({ d: parseDate(riItem.date), amount: Math.abs(riItem.amount) });
-        }
-        repayments.sort(function(a,b){ return a.d - b.d; });
-
-        var advances = [];
-        for(var ai = 0; ai < advanceItems.length; ai++) {
-            var aiItem = advanceItems[ai];
-            if(aiItem.date && aiItem.amount > 0) advances.push({ d: parseDate(aiItem.date), amount: Math.abs(aiItem.amount) });
-        }
-        advances.sort(function(a,b){ return a.d - b.d; });
-
-        var boundariesSet = {};
-        boundariesSet[startDate.getTime()] = true;
-        boundariesSet[endDate.getTime()] = true;
-
         var paymentMap = {};
-        for(var pi = 0; pi < repayments.length; pi++) {
-            var pItem = repayments[pi];
-            if(pItem.d > startDate && pItem.d <= endDate) {
-                boundariesSet[pItem.d.getTime()] = true;
-                var pk = fmtDate(pItem.d);
-                paymentMap[pk] = (paymentMap[pk] || 0) + pItem.amount;
-            }
+        for(var ri = 0; ri < repaymentItems.length; ri++) {
+            var rd = parseDate(repaymentItems[ri].date);
+            if(isNaN(rd.getTime())) continue;
+            var rk = fmtDate(rd);
+            paymentMap[rk] = (paymentMap[rk] || 0) + (parseFloat(repaymentItems[ri].amount) || 0);
         }
-
         var advanceMap = {};
-        for(var adi = 0; adi < advances.length; adi++) {
-            var aItem = advances[adi];
-            if(aItem.d > startDate && aItem.d <= endDate) {
-                boundariesSet[aItem.d.getTime()] = true;
-                var ak = fmtDate(aItem.d);
-                advanceMap[ak] = (advanceMap[ak] || 0) + aItem.amount;
-            }
+        for(var ai = 0; ai < advanceItems.length; ai++) {
+            var ad = parseDate(advanceItems[ai].date);
+            if(isNaN(ad.getTime())) continue;
+            var ak = fmtDate(ad);
+            advanceMap[ak] = (advanceMap[ak] || 0) + (parseFloat(advanceItems[ai].amount) || 0);
         }
 
-        for(var sti = 0; sti < stagesArr.length; sti++) {
-            var stg = stagesArr[sti];
-            if(sti > 0 && stg.effectiveDate > startDate && stg.effectiveDate < endDate) {
-                boundariesSet[stg.effectiveDate.getTime()] = true;
-            }
-            if(stg.rateSource === 'custom_schedule' && stg.customRates) {
-                for(var cri = 0; cri < stg.customRates.length; cri++) {
-                    var crp = stg.customRates[cri];
-                    if(crp.date > startDate && crp.date < endDate) boundariesSet[crp.date.getTime()] = true;
-                }
-            }
-        }
+        var boundaryKeys = Object.keys(paymentMap).concat(Object.keys(advanceMap)).concat([fmtDate(startDate), fmtDate(endDate)]);
+        boundaryKeys.sort();
+        boundaryKeys = boundaryKeys.filter(function(v,i,a){return !i || v !== a[i-1];});
 
-        var boundaryKeys = Object.keys(boundariesSet).map(function(k){ return parseInt(k); }).sort(function(a,b){ return a-b; });
-
-        var rows = [];
-        var currentPrincipal = roundMoney(principal);
+        var currentPrincipal = principal;
         var accruedInterest = 0;
+        var rows = [];
 
         for(var bi = 0; bi < boundaryKeys.length - 1; bi++) {
-            var cd = new Date(boundaryKeys[bi]);
-            var nd = new Date(boundaryKeys[bi+1]);
-
+            var cd = parseDate(boundaryKeys[bi]);
+            var nd = parseDate(boundaryKeys[bi+1]);
             var activeStage = stagesArr[stagesArr.length - 1];
-            for(var asi = 0; asi < stagesArr.length; asi++) {
-                if(!stagesArr[asi].effectiveDate.isAfter(cd)) { activeStage = stagesArr[asi]; } else { break; }
-            }
+            for(var sti = 0; sti < stagesArr.length; sti++) { if(!stagesArr[sti].effectiveDate.isAfter(cd)) activeStage = stagesArr[sti]; else break; }
 
             var annualRate;
             if(activeStage.interestKind === 'doubled_debt_interest') {
@@ -701,13 +590,10 @@ function doCalculate() {
                 var baseRate = getRateForDate(cd, activeStage.rateSource, activeStage.customRates || [], activeStage.fixedRate);
                 annualRate = adjustRate(baseRate, activeStage.adjustmentMode, activeStage.adjustmentValue);
             }
-            if(activeStage.applyRateCap && activeStage.rateCapPercent !== null && annualRate > activeStage.rateCapPercent) {
-                annualRate = activeStage.rateCapPercent;
-            }
+            if(activeStage.applyRateCap && activeStage.rateCapPercent !== null && annualRate > activeStage.rateCapPercent) annualRate = activeStage.rateCapPercent;
 
             var days = countDays(cd, nd, activeStage.endpointMode);
             var openingPrincipal = currentPrincipal;
-
             var segmentInterest;
             if(activeStage.interestKind === 'doubled_debt_interest') {
                 segmentInterest = roundMoney(openingPrincipal * annualRate / 100 * days / 365);
@@ -719,18 +605,13 @@ function doCalculate() {
             var dateKey = fmtDate(nd);
             var advAmt = advanceMap[dateKey] || 0;
             var payTotal = paymentMap[dateKey] || 0;
-
             var intPay = 0, prinPay = 0;
             if(payTotal > 0) {
                 var totalOwed = roundMoney(currentPrincipal + accruedInterest);
                 var actualPay = Math.min(payTotal, totalOwed);
                 switch(activeStage.repaymentMode) {
-                    case 'interest_first':
-                        intPay = Math.min(actualPay, accruedInterest);
-                        prinPay = actualPay - intPay; break;
-                    case 'principal_first':
-                        prinPay = Math.min(actualPay, currentPrincipal);
-                        intPay = actualPay - prinPay; break;
+                    case 'interest_first': intPay = Math.min(actualPay, accruedInterest); prinPay = actualPay - intPay; break;
+                    case 'principal_first': prinPay = Math.min(actualPay, currentPrincipal); intPay = actualPay - prinPay; break;
                     case 'proportional':
                         var totalDebt = currentPrincipal + accruedInterest;
                         if(totalDebt > 0) { prinPay = roundMoney(actualPay * currentPrincipal / totalDebt); intPay = actualPay - prinPay; } break;
@@ -740,47 +621,25 @@ function doCalculate() {
             } else if(advAmt > 0) {
                 currentPrincipal = roundMoney(currentPrincipal + advAmt);
             }
-
             var events = [];
-            if(payTotal > 0) events.push('\u8FD8\u6B3E \u00A5' + payTotal.toFixed(2));
-            if(advAmt > 0) events.push('\u8FFD\u52A0 \u00A5' + advAmt.toFixed(2));
+            if(payTotal > 0) events.push('还款 ¥' + payTotal.toFixed(2));
+            if(advAmt > 0) events.push('追加 ¥' + advAmt.toFixed(2));
 
             var nextActiveStage = stagesArr[stagesArr.length - 1];
-            for(var nsi = 0; nsi < stagesArr.length; nsi++) {
-                if(!stagesArr[nsi].effectiveDate.isAfter(nd)) nextActiveStage = stagesArr[nsi]; else break;
-            }
+            for(var nsi = 0; nsi < stagesArr.length; nsi++) { if(!stagesArr[nsi].effectiveDate.isAfter(nd)) nextActiveStage = stagesArr[nsi]; else break; }
             var stageChanged = activeStage.label !== nextActiveStage.label;
-
             var nextAnnualRate;
-            if(nextActiveStage.interestKind === 'doubled_debt_interest') {
-                nextAnnualRate = nextActiveStage.doubledDailyRate / 10000 * 365 * 100;
-            } else {
-                var nbr = getRateForDate(nd, nextActiveStage.rateSource, nextActiveStage.customRates || [], nextActiveStage.fixedRate);
-                nextAnnualRate = adjustRate(nbr, nextActiveStage.adjustmentMode, nextActiveStage.adjustmentValue);
-            }
-            if(nextActiveStage.applyRateCap && nextActiveStage.rateCapPercent !== null && nextAnnualRate > nextActiveStage.rateCapPercent) {
-                nextAnnualRate = nextActiveStage.rateCapPercent;
-            }
+            if(nextActiveStage.interestKind === 'doubled_debt_interest') { nextAnnualRate = nextActiveStage.doubledDailyRate / 10000 * 365 * 100; }
+            else { var nbr = getRateForDate(nd, nextActiveStage.rateSource, nextActiveStage.customRates || [], nextActiveStage.fixedRate); nextAnnualRate = adjustRate(nbr, nextActiveStage.adjustmentMode, nextActiveStage.adjustmentValue); }
+            if(nextActiveStage.applyRateCap && nextActiveStage.rateCapPercent !== null && nextAnnualRate > nextActiveStage.rateCapPercent) nextAnnualRate = nextActiveStage.rateCapPercent;
             var rateChanged = Math.abs(annualRate - nextAnnualRate) > 0.001;
 
-            rows.push({
-                periodStart: cd, periodEnd: nd,
-                stageLabel: activeStage.label,
-                rateSource: activeStage.rateSource,
-                days: days, dayBasis: activeStage.dayBasis,
-                annualRate: annualRate, openingPrincipal: openingPrincipal,
-                capitalizedInterest: 0,
-                segmentInterest: segmentInterest, advanceAmount: advAmt,
-                paymentTotal: payTotal,
-                interestPayment: intPay, principalPayment: prinPay,
-                closingPrincipal: currentPrincipal,
-                endingAccrued: accruedInterest,
-                eventLabel: events.join(' | ') || '',
-                isEvent: events.length > 0,
-                isStageChange: stageChanged,
-                isRateChange: rateChanged && !events.length,
-                isQueryEnd: bi === boundaryKeys.length - 2
-            });
+            rows.push({ periodStart: cd, periodEnd: nd, stageLabel: activeStage.label, rateSource: activeStage.rateSource,
+                days: days, dayBasis: activeStage.dayBasis, annualRate: annualRate, openingPrincipal: openingPrincipal,
+                segmentInterest: segmentInterest, advanceAmount: advAmt, paymentTotal: payTotal,
+                interestPayment: intPay, principalPayment: prinPay, closingPrincipal: currentPrincipal,
+                endingAccrued: accruedInterest, eventLabel: events.join(' | ') || '',
+                isEvent: events.length > 0, isStageChange: stageChanged, isRateChange: rateChanged && !events.length, isQueryEnd: bi === boundaryKeys.length - 2 });
         }
 
         var totalInterest = 0, totalPayment = 0;
@@ -793,16 +652,14 @@ function doCalculate() {
         var protectionRef = roundMoney(refBaseRate * protectionMultiplier);
 
         lastResult = { rows: rows, totalInterest: totalInterest, totalPayment: totalPayment,
-            remainingPrincipal: currentPrincipal, remainingInterest: accruedInterest,
-            protectionReferenceRate: protectionRef };
+            remainingPrincipal: currentPrincipal, remainingInterest: accruedInterest, protectionReferenceRate: protectionRef };
 
         renderResult(lastResult);
-        $('statusPill').textContent = '\u8BA1\u7B97\u5B8C\u6210 &#x2705;';
+        $('statusPill').textContent = '计算完成 ✅';
         $('rowCountPill').textContent = String(rows.length);
         $('resultCard').style.display = '';
         $('resultCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-    } catch(e) { showToast('\u8BA1\u7B97\u9519\u8BEF: ' + e.message); }
+    } catch(e) { showToast('计算错误: ' + e.message); console.error(e); }
     finally { setTimeout(function(){ showLoading(false); }, 300); }
 }
 
@@ -814,423 +671,503 @@ function parseCustomRates(text) {
         var line = lines[li].trim();
         if(!line) continue;
         var parts = line.split(',');
-        if(parts.length >= 2 && parts[0] && parts[1]) {
-            rates.push({ date: parseDate(parts[0]), rate: parseFloat(parts[1]) || 0 });
-        }
+        if(parts.length >= 2 && parts[0] && parts[1]) rates.push({ date: parseDate(parts[0]), rate: parseFloat(parts[1]) || 0 });
     }
     rates.sort(function(a,b){ return a.date - b.date; });
     return rates;
 }
 
-// ==================== 渲染结果 ====================
+/* ===== 渲染结果 ===== */
 function renderResult(result) {
     $('summaryCards').innerHTML =
-'<div class="summary-item"><div class="summary-label">\u603B\u5229\u606F</div><div class="summary-value">\u00A5' + fmtMoney(result.totalInterest) + '</div></div>' +
-'<div class="summary-item"><div class="summary-label">\u5DF2\u8FD8\u603B\u989D</div><div class="summary-value">\u00A5' + fmtMoney(result.totalPayment) + '</div></div>' +
-'<div class="summary-item"><div class="summary-label">\u5269\u4F59\u672C\u91D1</div><div class="summary-value">\u00A5' + fmtMoney(result.remainingPrincipal) + '</div></div>' +
-'<div class="summary-item"><div class="summary-label">\u5269\u4F59\u5229\u606F</div><div class="summary-value">\u00A5' + fmtMoney(result.remainingInterest) + '</div></div>' +
-'<div class="summary-item"><div class="summary-label">\u4FDD\u62A4\u53C2\u8003\u5229\u7387</div><div class="summary-value">' + result.protectionReferenceRate.toFixed(2) + '%</div></div>' +
-'<div class="summary-item"><div class="summary-label">\u8BB0\u5F55\u6570</div><div class="summary-value">' + result.rows.length + ' \u884C</div></div>';
-
+'<div class="summary-item"><div class="summary-label">总利息</div><div class="summary-value">¥' + fmtMoney(result.totalInterest) + '</div></div>' +
+'<div class="summary-item"><div class="summary-label">已还总额</div><div class="summary-value">¥' + fmtMoney(result.totalPayment) + '</div></div>' +
+'<div class="summary-item"><div class="summary-label">剩余本金</div><div class="summary-value">¥' + fmtMoney(result.remainingPrincipal) + '</div></div>' +
+'<div class="summary-item"><div class="summary-label">剩余利息</div><div class="summary-value">¥' + fmtMoney(result.remainingInterest) + '</div></div>' +
+'<div class="summary-item"><div class="summary-label">保护参考利率</div><div class="summary-value">' + result.protectionReferenceRate.toFixed(2) + '%</div></div>' +
+'<div class="summary-item"><div class="summary-label">记录数</div><div class="summary-value">' + result.rows.length + ' 行</div></div>';
     renderResultRows(result.rows);
     buildFilterChips();
 }
 
 function renderResultRows(rows) {
     var area = $('resultArea');
-    if(!rows || !rows.length) { area.innerHTML = '<div class="empty-state"><p>\u65E0\u7ED3\u679C</p></div>'; return; }
+    if(!rows || !rows.length) { area.innerHTML = '<div class="empty-state"><p>无结果</p></div>'; return; }
     var html = '';
     for(var i = 0; i < rows.length; i++) {
         var r = rows[i];
         var tagHtml = '';
         if(r.isEvent) tagHtml = '<span class="event-badge">' + r.eventLabel + '</span>';
-        else if(r.isStageChange) tagHtml = '<span class="stage-tag">\u9636\u6BB5\u53D8\u66F4: ' + r.stageLabel + '</span>';
-        else if(r.isRateChange) tagHtml = '<span class="stage-tag">\u5229\u7387\u8C03\u6574</span>';
+        else if(r.isStageChange) tagHtml = '<span class="stage-tag">阶段变更: ' + r.stageLabel + '</span>';
+        else if(r.isRateChange) tagHtml = '<span class="stage-tag">利率调整</span>';
 
         html += '<div class="row-card" id="rowCard-' + i + '">' +
-'<div class="row-card-header" onclick="toggleRowCard(' + i + ',event)"><div class="left"><span class="date-range">' + fmtDate(r.periodStart) + ' ~ ' + fmtDate(r.periodEnd) + '</span>' + tagHtml + '</div>' +
-'<span class="arrow">&#x25B6;</span></div>' +
-'<div class="row-card-summary"><span>\u5929\u6570: <b>' + r.days + '</b></span><span>\u5229\u7387: <b>' + (r.annualRate||0).toFixed(2) + '%</b></span><span>\u5F00\u59CB\u672C\u91D1: <b>\u00A5' + fmtMoney(r.openingPrincipal) + '</b></span>' +
-'<span>\u6BB5\u5229\u606F: <b style="color:' + (r.segmentInterest>0?'var(--error)':'var(--success)') + '">\u00A5' + fmtMoney(r.segmentInterest) + '</b></span>' +
-'<span>\u95ED\u672C\u91D1: <b>\u00A5' + fmtMoney(r.closingPrincipal) + '</b></span></div>' +
+'<div class="row-card-header" onclick="toggleRowCard(' + i + ')"><div class="left"><span class="date-range">' + fmtDate(r.periodStart) + ' ~ ' + fmtDate(r.periodEnd) + '</span>' + tagHtml + '</div>' +
+'<span class="arrow">▶</span></div>' +
+'<div class="row-card-summary"><span>天数: <b>' + r.days + '</b></span><span>利率: <b>' + (r.annualRate||0).toFixed(2) + '%</b></span><span>开始本金: <b>¥' + fmtMoney(r.openingPrincipal) + '</b></span>' +
+'<span>段利息: <b style="color:' + (r.segmentInterest>0?'var(--error)':'var(--success)') + '">¥' + fmtMoney(r.segmentInterest) + '</b></span>' +
+'<span>闭本金: <b>¥' + fmtMoney(r.closingPrincipal) + '</b></span></div>' +
 '<div class="row-card-body" id="rowBody-' + i + '">' +
 '<div class="row-detail-grid">' +
-'<div class="row-detail-item"><span class="row-detail-label">\u9636\u6BB5\u6807\u7B7E</span><span class="row-detail-val">' + (r.stageLabel||'-') + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u5229\u7387\u6765\u6E90</span><span class="row-detail-val">' + (r.rateSource||'-') + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u5929\u6570</span><span class="row-detail-val">' + r.days + ' / ' + r.dayBasis + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u5E74\u5229\u7387</span><span class="row-detail-val">' + (r.annualRate||0).toFixed(4) + '%</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u5F00\u59CB\u672C\u91D1</span><span class="row-detail-val">\u00A5' + fmtMoney(r.openingPrincipal) + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u6BB5\u5229\u606F</span><span class="row-detail-val">\u00A5' + fmtMoney(r.segmentInterest) + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u8FFD\u52A0\u51FA\u501F</span><span class="row-detail-val">\u00A5' + fmtMoney(r.advanceAmount) + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u8FD8\u6B3E\u603B\u989D</span><span class="row-detail-val">\u00A5' + fmtMoney(r.paymentTotal) + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u5229\u606F\u8FD8\u6B3E</span><span class="row-detail-val">\u00A5' + fmtMoney(r.interestPayment) + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u672C\u91D1\u8FD8\u6B3E</span><span class="row-detail-val">\u00A5' + fmtMoney(r.principalPayment) + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u95ED\u672C\u91D1</span><span class="row-detail-val">\u00A5' + fmtMoney(r.closingPrincipal) + '</span></div>' +
-'<div class="row-detail-item"><span class="row-detail-label">\u7D2F\u8BA1\u5229\u606F</span><span class="row-detail-val">\u00A5' + fmtMoney(r.endingAccrued) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">阶段标签</span><span class="row-detail-val">' + (r.stageLabel||'-') + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">利率来源</span><span class="row-detail-val">' + (r.rateSource||'-') + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">天数</span><span class="row-detail-val">' + r.days + ' / ' + r.dayBasis + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">年利率</span><span class="row-detail-val">' + (r.annualRate||0).toFixed(4) + '%</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">开始本金</span><span class="row-detail-val">¥' + fmtMoney(r.openingPrincipal) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">段利息</span><span class="row-detail-val">¥' + fmtMoney(r.segmentInterest) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">追加出借</span><span class="row-detail-val">¥' + fmtMoney(r.advanceAmount) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">还款总额</span><span class="row-detail-val">¥' + fmtMoney(r.paymentTotal) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">利息还款</span><span class="row-detail-val">¥' + fmtMoney(r.interestPayment) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">本金还款</span><span class="row-detail-val">¥' + fmtMoney(r.principalPayment) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">闭本金</span><span class="row-detail-val">¥' + fmtMoney(r.closingPrincipal) + '</span></div>' +
+'<div class="row-detail-item"><span class="row-detail-label">累计利息</span><span class="row-detail-val">¥' + fmtMoney(r.endingAccrued) + '</span></div>' +
 '</div></div></div>';
     }
     area.innerHTML = html;
 }
 
-function toggleRowCard(idx, evt) {
-    if(expandedRows.has(idx)) expandedRows.delete(idx); else expandedRows.add(idx);
+function toggleRowCard(idx) {
+    if(expandedRows.has(idx)) { expandedRows.delete(idx); } else { expandedRows.add(idx); }
+    updateRowCardOpen(idx);
+}
+function updateRowCardOpen(idx) {
     var card = document.getElementById('rowCard-' + idx);
-    if(card) card.querySelector('.row-card-header').classList.toggle('open');
     var body = document.getElementById('rowBody-' + idx);
-    if(body) body.classList.toggle('open');
+    var isOpen = expandedRows.has(idx);
+    if(card) {
+        var header = card.querySelector('.row-card-header');
+        if(header) { if(isOpen) header.classList.add('open'); else header.classList.remove('open'); }
+    }
+    if(body) { if(isOpen) body.classList.add('open'); else body.classList.remove('open'); }
+}
+function expandAllRows() {
+    if(!lastResult || !lastResult.rows) return;
+    for(var i = 0; i < lastResult.rows.length; i++) {
+        expandedRows.add(i);
+        updateRowCardOpen(i);
+    }
+}
+function collapseAllRows() {
+    expandedRows.clear();
+    var cards = document.querySelectorAll('.row-card-header.open');
+    for(var j = 0; j < cards.length; j++) cards[j].classList.remove('open');
+    var bodies = document.querySelectorAll('.row-card-body.open');
+    for(var k = 0; k < bodies.length; k++) bodies[k].classList.remove('open');
 }
 
-function expandAllRows() { for(var i = 0; i < (lastResult?lastResult.rows.length:0); i++) toggleRowCard(i,null); }
-function collapseAllRows() { expandedRows.clear(); var cards=document.querySelectorAll('.row-card-header.open');for(var j=0;j<cards.length;j++)cards[j].classList.remove('open');var bodies=document.querySelectorAll('.row-card-body.open');for(var k=0;k<bodies.length;k++)bodies[k].classList.remove('open'); }
-
-function setFilter(filter) { currentFilter = filter; buildFilterChips(); if(lastResult) renderResultRows(lastResult.rows); }
+function setFilter(filter) {
+    currentFilter = filter;
+    buildFilterChips();
+    if(lastResult) {
+        var filtered = lastResult.rows;
+        if(filter === 'event') filtered = lastResult.rows.filter(function(r){ return r.isEvent; });
+        else if(filter === 'stage') filtered = lastResult.rows.filter(function(r){ return r.isStageChange && !r.isEvent; });
+        else if(filter === 'rate') filtered = lastResult.rows.filter(function(r){ return r.isRateChange && !r.isEvent && !r.isStageChange; });
+        renderResultRows(filtered);
+    }
+}
 function buildFilterChips() {
-    var fc = $('filterChips');
-    var chips = [{id:'all',label:'\u5168\u90E8'}];
+    var fc = $('filterChipsArea');
+    var chips = [{id:'all',label:'全部'}];
     if(lastResult && lastResult.rows) {
-        var hasEvent=false,hasStage=false,hasRate=false;
-        for(var ci=0;ci<lastResult.rows.length;ci++){if(lastResult.rows[ci].isEvent)hasEvent=true;if(lastResult.rows[ci].isStageChange)hasStage=true;if(lastResult.rows[ci].isRateChange)hasRate=true;}
-        if(hasEvent)chips.push({id:'event',label:'\u8FD8\u6B3E/\u8FFD\u52A0'});
-        if(hasStage)chips.push({id:'stage',label:'\u9636\u6BB5\u53D8\u66F4'});
-        if(hasRate)chips.push({id:'rate',label:'\u5229\u7387\u8C03\u6574'});
+        var hasEvent = lastResult.rows.some(function(r){ return r.isEvent; });
+        var hasStage = lastResult.rows.some(function(r){ return r.isStageChange; });
+        var hasRate = lastResult.rows.some(function(r){ return r.isRateChange; });
+        if(hasEvent) chips.push({id:'event',label:'有事件'});
+        if(hasStage) chips.push({id:'stage',label:'阶段变更'});
+        if(hasRate) chips.push({id:'rate',label:'利率调整'});
     }
-    var h='';
-    for(var i=0;i<chips.length;i++){
-        h+='<button class="chip'+(currentFilter===chips[i].id?' active':'')+'" onclick="setFilter(\''+chips[i].id+'\')">'+chips[i].label+'</button>';
+    var html = '';
+    for(var i = 0; i < chips.length; i++) {
+        html += '<span class="chip' + (currentFilter===chips[i].id?' active':'') + '" onclick="setFilter(\'' + chips[i].id + '\')">' + chips[i].label + '</span>';
     }
-    fc.innerHTML=h;
+    fc.innerHTML = html;
 }
 
-// ==================== Excel \u5BFC\u51FA ====================
+function copyResult() {
+    if(!lastResult) { showToast('请先进行计算'); return; }
+    var text = '总利息: ¥' + fmtMoney(lastResult.totalInterest) + '\n';
+    text += '已还总额: ¥' + fmtMoney(lastResult.totalPayment) + '\n';
+    text += '剩余本金: ¥' + fmtMoney(lastResult.remainingPrincipal) + '\n';
+    text += '剩余利息: ¥' + fmtMoney(lastResult.remainingInterest) + '\n';
+    text += '保护参考利率: ' + lastResult.protectionReferenceRate.toFixed(2) + '%\n\n';
+    for(var i = 0; i < lastResult.rows.length; i++) {
+        var r = lastResult.rows[i];
+        text += fmtDate(r.periodStart) + ' ~ ' + fmtDate(r.periodEnd) + ' | 天数:' + r.days + ' | 利率:' + (r.annualRate||0).toFixed(2) + '% | 开始本金:¥' + fmtMoney(r.openingPrincipal) + ' | 段利息:¥' + fmtMoney(r.segmentInterest) + ' | 闭本金:¥' + fmtMoney(r.closingPrincipal);
+        if(r.eventLabel) text += ' | ' + r.eventLabel;
+        text += '\n';
+    }
+    navigator.clipboard.writeText(text).then(function(){ showToast('已复制到剪贴板'); }).catch(function(){ showToast('复制失败，请手动复制'); });
+}
+
 function exportExcel() {
-    if(!lastResult){showToast('\u8BF7\u5148\u8FDB\u884C\u8BA1\u7B97');return;}
-    try{
-        var wb=XLSX.utils.book_new();
-        var wsData=[['\u671F\u95F4\u8D77\u70B9','\u671F\u95F4\u7EC8\u70B9','\u9636\u6BB5\u6807\u7B7E','\u5229\u7387\u6765\u6E90','\u5929\u6570','\u5929\u6570\u57FA\u51C6','\u5E74\u5229\u7387(%)','\u5F00\u59CB\u672C\u91D1','\u6BB5\u5229\u606F','\u8FFD\u52A0\u51FA\u501F','\u8FD8\u6B3E\u603B\u989D','\u5229\u606F\u8FD8\u6B3E','\u672C\u91D1\u8FD8\u6B3E','\u95ED\u672C\u91D1','\u7D2F\u8BA1\u5229\u606F','\u4E8B\u4EF6']];
-        for(var ri=0;ri<lastResult.rows.length;ri++){
-            var row=lastResult.rows[ri];
+    if(!lastResult) { showToast('请先进行计算'); return; }
+    try {
+        if(typeof XLSX === 'undefined') { showToast('Excel库未加载，请刷新页面重试'); return; }
+        var wb = XLSX.utils.book_new();
+        var wsData = [['时间段起点','时间段终点','阶段标签','利率来源','天数','天数基准','年利率(%)','开始本金','段利息','追加出借','还款总额','利息还款','本金还款','闭本金','累计利息','事件']];
+        for(var ri = 0; ri < lastResult.rows.length; ri++) {
+            var row = lastResult.rows[ri];
             wsData.push([fmtDate(row.periodStart),fmtDate(row.periodEnd),row.stageLabel,row.rateSource,row.days,row.dayBasis,(row.annualRate||0).toFixed(4),row.openingPrincipal,row.segmentInterest,row.advanceAmount,row.paymentTotal,row.interestPayment,row.principalPayment,row.closingPrincipal,row.endingAccrued,row.eventLabel]);
         }
         wsData.push(['']);
-        wsData.push(['\u6C47\u603B']);
-        wsData.push(['\u603B\u5229\u606F',lastResult.totalInterest]);
-        wsData.push(['\u5DF2\u8FD8\u603B\u989D',lastResult.totalPayment]);
-        wsData.push(['\u5269\u4F59\u672C\u91D1',lastResult.remainingPrincipal]);
-        wsData.push(['\u5269\u4F59\u5229\u606F',lastResult.remainingInterest]);
-        wsData.push(['\u4FDD\u62A4\u53C2\u8003\u5229\u7387(%)',lastResult.protectionReferenceRate]);
-        var ws=XLSX.utils.aoa_to_sheet(wsData);
-        ws['!cols']=[{wch:14},{wch:14},{wch:18},{wch:12},{wch:8},{wch:10},{wch:14},{wch:16},{wch:14},{wch:14},{wch:14},{wch:14},{wch:14},{wch:16},{wch:14},{wch:24}];
-        XLSX.utils.book_append_sheet(wb,ws,'\u5229\u606F\u660E\u7EC6');
-        XLSX.writeFile(wb,'\u5229\u606F\u8BA1\u7B97\u7ED3\u679C_'+fmtDate(new Date())+'.xlsx');
-        showToast('Excel \u5BFC\u51FA\u6210\u529F &#x2705;');
-    }catch(e){showToast('\u5BFC\u51FA\u5931\u8D25: '+e.message);}
-}
-function copyResult(){
-    if(!lastResult){showToast('\u8BF7\u5148\u8FDB\u884C\u8BA1\u7B97');return;}
-    var t='\u3010CourtClaw \u5229\u606F\u8BA1\u7B97\u7ED3\u679C\u3011\n';
-    t+='\u603B\u5229\u606F: \u00A5'+fmtMoney(lastResult.totalInterest)+'\n';
-    t+='\u5DF2\u8FD8\u603B\u989D: \u00A5'+fmtMoney(lastResult.totalPayment)+'\n';
-    t+='\u5269\u4F59\u672C\u91D1: \u00A5'+fmtMoney(lastResult.remainingPrincipal)+'\n';
-    t+='\u5269\u4F59\u5229\u606F: \u00A5'+fmtMoney(lastResult.remainingInterest)+'\n';
-    navigator.clipboard.writeText(t).then(function(){showToast('\u5DF2\u590D\u5236\u5230\u526A\u8D34\u677F');}).catch(function(){showToast('\u590D\u5236\u5931\u8D25');});
+        wsData.push(['总计']);
+        wsData.push(['总利息',lastResult.totalInterest]);
+        wsData.push(['已还总额',lastResult.totalPayment]);
+        wsData.push(['剩余本金',lastResult.remainingPrincipal]);
+        wsData.push(['剩余利息',lastResult.remainingInterest]);
+        wsData.push(['保护参考利率(%)',lastResult.protectionReferenceRate]);
+        var ws = XLSX.utils.aoa_to_sheet(wsData);
+        ws['!cols'] = [{wch:14},{wch:14},{wch:18},{wch:12},{wch:8},{wch:10},{wch:14},{wch:16},{wch:14},{wch:14},{wch:14},{wch:14},{wch:14},{wch:16},{wch:14},{wch:24}];
+        XLSX.utils.book_append_sheet(wb, ws, '利息明细');
+        XLSX.writeFile(wb, '利息计算结果_' + fmtDate(new Date()) + '.xlsx');
+        showToast('Excel 导出成功');
+    } catch(e) { showToast('导出失败: ' + e.message); }
 }
 
-// ==================== \u516C\u5F0F\u7BA1\u7406 (localStorage) ====================
-function saveCurrentScheme() {
-    var name=$('saveSchemeName').value.trim()||'\u672A\u547D\u540D\u516C\u5F0F';
-    var scheme={
-        name:name,
-        principal:$('principal').value,
-        startDate:$('startDate').value,
-        endDate:$('endDate').value,
-        rateSource:$('rateSource').value,
-        fixedRate:$('fixedRate').value,
-        customRates:$('customRates').value,
-        adjustmentMode:$('adjustmentMode').value,
-        adjustmentValue:$('adjustmentValue').value,
-        interestKind:$('interestKind').value,
-        doubledDailyRate:$('doubledDailyRate').value,
-        dayBasis:$('dayBasis').value,
-        endpointMode:$('endpointMode').value,
-        repaymentMode:$('repaymentMode').value,
-        applyRateCap:$('applyRateCap').checked,
-        rateCapPercent:$('rateCapPercent').value,
-        protectionMultiplier:$('protectionMultiplier').value,
-        notes:$('notes').value,
-        repayments:[],advances:[],stages:[],
-        savedAt:new Date().toISOString()
+/* ===== 公式保存与加载 ===== */
+function getCurrentState() {
+    return {
+        schemeName: $('schemeName').value,
+        principal: $('principal').value,
+        startDate: $('startDate').value,
+        endDate: $('endDate').value,
+        notes: $('notes').value,
+        interestKind: $('interestKind').value,
+        doubledDailyRate: $('doubledDailyRate').value,
+        repaymentMode: $('repaymentMode').value,
+        endpointMode: $('endpointMode').value,
+        dayBasis: $('dayBasis').value,
+        rateSource: $('rateSource').value,
+        fixedRate: $('fixedRate').value,
+        customRates: $('customRates').value,
+        adjustmentMode: $('adjustmentMode').value,
+        adjustmentValue: $('adjustmentValue').value,
+        applyRateCap: $('applyRateCap').checked,
+        rateCapPercent: $('rateCapPercent').value,
+        protectionMultiplier: $('protectionMultiplier').value,
+        repaymentItems: JSON.parse(JSON.stringify(repaymentItems)),
+        advanceItems: JSON.parse(JSON.stringify(advanceItems)),
+        timelineStages: JSON.parse(JSON.stringify(timelineStages))
     };
-    for(var ri=0;ri<repaymentItems.length;ri++)scheme.repayments.push({date:repaymentItems[ri].date,amount:repaymentItems[ri].amount,note:repaymentItems[ri].note});
-    for(var ai=0;ai<advanceItems.length;ai++)scheme.advances.push({date:advanceItems[ai].date,amount:advanceItems[ai].amount,note:advanceItems[ai].note});
-    for(var si=0;si<timelineStages.length;si++){
-        var s=timelineStages[si];
-        scheme.stages.push({
-            effectiveDate:s.effectiveDate,label:s.label,rateSource:s.rateSource,fixedRate:s.fixedRate,
-            customRates:s.customRates,adjustmentMode:s.adjustmentMode,adjustmentValue:s.adjustmentValue,
-            interestKind:s.interestKind,dayBasis:s.dayBasis,endpointMode:s.endpointMode,
-            repaymentMode:s.repaymentMode,applyRateCap:s.applyRateCap,rateCapPercent:s.rateCapPercent
-        });
-    }
-    var allSchemes=getAllSchemes();
-    allSchemes.push(scheme);
-    localStorage.setItem('courtclaw_schemes',JSON.stringify(allSchemes));
-    loadSchemes();
-    showToast('\u516C\u5F0F\u201C'+name+'\u201D\u4FDD\u558B\u6210\u529F &#x2705;');
 }
-function getAllSchemes() {
-    try{ var d=localStorage.getItem('courtclaw_schemes'); return d?JSON.parse(d):[]; }catch(e){return[];}
-}
-function deleteScheme(idx){
-    var all=getAllSchemes();
-    if(idx>=0&&idx<all.length){all.splice(idx,1);localStorage.setItem('courtclaw_schemes',JSON.stringify(all));loadSchemes();}
-}
-function clearAllSchemes(){if(confirm('\u786E\u5B9A\u6E05\u7A7A\u6240\u6709\u5DF2\u4FDD\u5B58\u7684\u516C\u5F0F?')){localStorage.removeItem('courtclaw_schemes');loadSchemes();}}
-function applyScheme(scheme){
-    if(!scheme)return;
-    if(scheme.principal)$('principal').value=scheme.principal;
-    if(scheme.startDate)$('startDate').value=scheme.startDate;
-    if(scheme.endDate)$('endDate').value=scheme.endDate;
-    if(scheme.rateSource)$('rateSource').value=scheme.rateSource;
-    if(scheme.fixedRate)$('fixedRate').value=scheme.fixedRate;
-    if(scheme.customRates)$('customRates').value=scheme.customRates;
-    if(scheme.adjustmentMode)$('adjustmentMode').value=scheme.adjustmentMode;
-    if(scheme.adjustmentValue)$('adjustmentValue').value=scheme.adjustmentValue;
-    if(scheme.interestKind)$('interestKind').value=scheme.interestKind;
-    if(scheme.doubledDailyRate)$('doubledDailyRate').value=scheme.doubledDailyRate;
-    if(scheme.dayBasis)$('dayBasis').value=scheme.dayBasis;
-    if(scheme.endpointMode)$('endpointMode').value=scheme.endpointMode;
-    if(scheme.repaymentMode)$('repaymentMode').value=scheme.repaymentMode;
-    if(typeof scheme.applyRateCap==='boolean')$('applyRateCap').checked=scheme.applyRateCap;
-    if(scheme.rateCapPercent)$('rateCapPercent').value=scheme.rateCapPercent;
-    if(scheme.protectionMultiplier)$('protectionMultiplier').value=scheme.protectionMultiplier;
-    if(scheme.notes)$('notes').value=scheme.notes;
+function restoreState(s) {
+    if(!s) return;
+    $('schemeName').value = s.schemeName || '';
+    $('principal').value = s.principal || '';
+    $('startDate').value = s.startDate || '';
+    $('endDate').value = s.endDate || '';
+    $('notes').value = s.notes || '';
+    $('interestKind').value = s.interestKind || 'normal';
+    $('doubledGroup').style.display = s.interestKind === 'doubled_debt_interest' ? '' : 'none';
+    $('doubledDailyRate').value = s.doubledDailyRate || '1.75';
+    $('repaymentMode').value = s.repaymentMode || 'interest_first';
+    $('endpointMode').value = s.endpointMode || 'include_start_exclude_end';
+    $('dayBasis').value = s.dayBasis || '360';
+    $('rateSource').value = s.rateSource || 'lpr_5y';
     onRateSourceChange();
-    initDynamicFields();
-    repaymentItems=[];
-    if(scheme.repayments&&scheme.repayments.length){for(var ri=0;ri<scheme.repayments.length;ri++)addRepaymentRow(scheme.repayments[ri]);}
-    advanceItems=[];
-    if(scheme.advances&&scheme.advances.length){for(var ai=0;ai<scheme.advances.length;ai++)addAdvanceRow(scheme.advances[ai]);}
-    timelineStages=[];stageIdCounter=0;
-    if(scheme.stages&&scheme.stages.length){for(var si=0;si<scheme.stages.length;si++)addTimelineStage(scheme.stages[si]);}
+    $('fixedRate').value = s.fixedRate || '';
+    $('customRates').value = s.customRates || '';
+    $('adjustmentMode').value = s.adjustmentMode || 'none';
+    $('adjustmentValue').value = s.adjustmentValue || '0';
+    $('applyRateCap').checked = s.applyRateCap || false;
+    $('rateCapGroup').style.display = s.applyRateCap ? '' : 'none';
+    $('rateCapPercent').value = s.rateCapPercent || '';
+    $('protectionMultiplier').value = s.protectionMultiplier || '4';
+    repaymentItems = s.repaymentItems || [];
+    advanceItems = s.advanceItems || [];
+    timelineStages = s.timelineStages || [];
+    renderRepaymentRows();
+    renderAdvanceRows();
+    renderTimelineStages();
     updateStageCount();
-    $('schemeCountPill').textContent=String(getAllSchemes().length);
-    showTab('calc');
-    showToast('\u5DF2\u52A0\u8F7D\u516C\u5F0F: '+scheme.name);
 }
-function showSchemeImport(){showTab('scheme');}
-function showTab(tabId){
-    var btns=document.querySelectorAll('.tab-btn');
-    for(var bi=0;bi<btns.length;bi++)btns[bi].classList.remove('active');
-    var panels=document.querySelectorAll('.tab-panel');
-    for(var pi=0;pi<panels.length;pi++)panels[pi].classList.remove('active');
-    var targetBtn=document.querySelector('[data-tab="'+tabId+'"]');
-    if(targetBtn)targetBtn.classList.add('active');
-    var targetPanel=document.getElementById('panel-'+tabId);
-    if(targetPanel)targetPanel.classList.add('active');
+function saveCurrentScheme() {
+    var name = $('saveSchemeName').value.trim() || '未命名公式';
+    var state = getCurrentState();
+    var schemes = loadSchemesFromStorage();
+    schemes.push({ name: name, savedAt: new Date().toISOString(), data: state });
+    localStorage.setItem('courtclaw_schemes', JSON.stringify(schemes));
+    showToast('公式「' + name + '」已保存');
+    renderSchemeList();
 }
-function loadSchemes(){
-    var all=getAllSchemes();
-    $('savedCount').textContent=String(all.length);
-    $('schemeCountPill').textContent=String(all.length);
-    var area=$('schemeListArea');
-    if(!all.length){area.innerHTML='<div class="empty-state"><div class="icon">&#x1F4ED;</div><p>\u8FD8\u6CA1\u6709\u4FDD\u5B58\u7684\u516C\u5F0F</p><p class="sub">\u5728\u300C\u8BA1\u7B97\u300D\u6807\u7B7E\u9875\u8BBE\u7F6E\u597D\u53C2\u6570\u540E\uff0c\u70B9\u51FB\u4FDD\u5B58\u6309\u94AE\u5373\u53EF</p></div>';return;}
-    var h='';
-    for(var i=0;i<all.length;i++){
-        var s=all[i];
-        h+='<div class="scheme-card"><div class="scheme-info"><h4>'+s.name+'</h4><p>\u672C\u91D1: \u00A5'+(s.principal||0)+' | \u8D77: '+(s.startDate||'-')+' ~ \u622A: '+(s.endDate||'-')+' | \u5229\u7387: '+s.rateSource+(s.adjustmentMode!=='none'?('/'+s.adjustmentMode+s.adjustmentValue):'')+'</p></div>'+
-'<div class="scheme-actions"><button class="btn btn-primary btn-sm" onclick="(function(){applyScheme('+JSON.stringify(s)+')})()">\u52A0\u8F7D</button><button class="btn btn-danger btn-sm" onclick="deleteScheme(' + i + ')">\u5220\u9664</button></div></div>';
+function loadSchemesFromStorage() {
+    try { return JSON.parse(localStorage.getItem('courtclaw_schemes') || '[]'); } catch(e) { return []; }
+}
+function loadScheme(idx) {
+    var schemes = loadSchemesFromStorage();
+    if(idx < 0 || idx >= schemes.length) return;
+    restoreState(schemes[idx].data);
+    $('saveSchemeName').value = schemes[idx].name;
+    showToast('已加载公式「' + schemes[idx].name + '」');
+    switchTab('calc');
+}
+function deleteScheme(idx) {
+    var schemes = loadSchemesFromStorage();
+    if(idx < 0 || idx >= schemes.length) return;
+    var name = schemes[idx].name;
+    schemes.splice(idx, 1);
+    localStorage.setItem('courtclaw_schemes', JSON.stringify(schemes));
+    showToast('公式「' + name + '」已删除');
+    renderSchemeList();
+}
+function clearAllSchemes() {
+    if(!confirm('确定要清空所有已保存的公式吗？此操作不可恢复。')) return;
+    localStorage.removeItem('courtclaw_schemes');
+    showToast('所有公式已清空');
+    renderSchemeList();
+}
+function renderSchemeList() {
+    var area = $('schemeListArea');
+    var schemes = loadSchemesFromStorage();
+    $('savedCount').textContent = String(schemes.length);
+    $('schemeCountPill').textContent = String(schemes.length);
+    if(!schemes.length) {
+        area.innerHTML = '<div class="empty-state"><div class="icon">📭</div><p>还没有保存的公式</p><p style="font-size:12px;color:var(--text-muted)">在「计算」标签页设置好参数后，点击保存按钮即可</p></div>';
+        return;
     }
-    area.innerHTML=h;
+    var html = '';
+    for(var i = schemes.length - 1; i >= 0; i--) {
+        var s = schemes[i];
+        var savedDate = '';
+        try { savedDate = fmtDate(new Date(s.savedAt)); } catch(e) {}
+        html += '<div class="scheme-card"><div class="scheme-info"><h4>' + (s.name||'未命名') + '</h4><p>本金: ¥' + (s.data.principal||'0') + ' | 保存于: ' + savedDate + '</p></div><div class="btn-group"><button class="btn btn-primary btn-sm" onclick="loadScheme(' + i + ')">加载</button><button class="btn btn-danger btn-sm" onclick="deleteScheme(' + i + ')">删除</button></div></div>';
+    }
+    area.innerHTML = html;
 }
 
-// ==================== \u7ED3\u6784\u5316\u6587\u4EF6\u5BFC\u5165 ====================
+/* ===== 结构化文件导入 ===== */
 function handleStructuredImport(event) {
-    var file=event.target.files[0];
-    if(!file)return;
-    var reader=new FileReader();
-    reader.onload=function(e){
-        try{
-            _structuredParsed=[];
-            var text=e.target.result;
-            if(file.name.endsWith('.xlsx')||file.name.endsWith('.xls')){
-                var wb=XLSX.read(text,{type:'array'});
-                var ws=wb.Sheets[wb.SheetNames[0]];
-                var data=XLSX.utils.sheet_to_json(ws,{header:1});
-                parseAndDisplayTable(data,file.name);
-            }else{
-                var lines=text.split(/\r?\n/);
-                var data=[];
-                for(var li=0;li<lines.length;li++){
-                    var line=lines[li].trim();
-                    if(!line)continue;
-                    var parts=line.split(/[\t,]/);
-                    data.push(parts);
+    var file = event.target.files[0];
+    if(!file) return;
+    var ext = file.name.split('.').pop().toLowerCase();
+    if(ext === 'csv' || ext === 'txt') {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var text = e.target.result;
+            var lines = text.split('\n').filter(function(l){ return l.trim(); });
+            var records = [];
+            for(var i = 0; i < lines.length; i++) {
+                var cols = lines[i].split(/[,;\t]/);
+                var dateStr = '', amount = 0, note = '';
+                for(var j = 0; j < cols.length; j++) {
+                    var v = cols[j].trim();
+                    if(v.match(/^\d{4}[-/.]\d{1,2}[-/.]\d{1,2}$/)) dateStr = v;
+                    else if(v.match(/^-?\d+(\.\d+)?$/) && !dateStr) { /* skip first numbers before date */ }
+                    else if(v.match(/^-?\d+(\.\d+)?$/)) { if(!amount) amount = parseFloat(v); }
+                    else if(v && !v.match(/日期|时间|date|time|金额|amount|备注|note|说明|序号|编号/i)) note += (note?' ':'') + v;
                 }
-                parseAndDisplayTable(data,file.name);
+                if(dateStr && amount) records.push({ date: dateStr, amount: amount, note: note });
             }
-        }catch(err){showToast('\u89E3\u6790\u6587\u4EF6\u5931\u8D25: '+err.message);}
-    };
-    if(file.name.endsWith('.xlsx')||file.name.endsWith('.xls'))reader.readAsArrayBuffer(file);
-    else reader.readAsText(file,'UTF-8');
-    event.target.value='';
-}
-function parseAndDisplayTable(data,filename){
-    if(!data||data.length<2){showToast('\u6587\u4EF6\u683C\u5F0F\u4E0D\u6B63\u786E\u6216\u6570\u636E\u4E3A\u7A7A');return;}
-    var headers=data[0];
-    var dateCol=-1,amountCol=-1,noteCol=-1;
-    for(var hi=0;hi<headers.length;hi++){
-        var h=headers[hi].toString().toLowerCase().replace(/[\s\u3000]/g,'');
-        if(h.indexOf('\u65E5\u671F')>=0||h.indexOf('date')>=0)dateCol=hi;
-        else if((h.indexOf('\u91D1\u989D')>=0||h.indexOf('amount')>=0||h.indexOf('\u989D')>=0)&&amountCol<0)amountCol=hi;
-        else if(h.indexOf('\u5907\u6CE8')>=0||h.indexOf('note')>=0||h.indexOf('\u63CF\u8FF0')>=0)noteCol=hi;
+            if(records.length) { pendingImportRecords = records; showConfirmModal(); }
+            else showToast('未能从文件中解析出有效记录');
+        };
+        reader.readAsText(file);
+    } else if(ext === 'xlsx') {
+        if(typeof XLSX === 'undefined') { showToast('Excel库未加载，请刷新重试'); return; }
+        var reader = new FileReader();
+        reader.onload = function(e) {
+            var data = new Uint8Array(e.target.result);
+            var wb = XLSX.read(data, {type: 'array'});
+            var ws = wb.Sheets[wb.SheetNames[0]];
+            var rows = XLSX.utils.sheet_to_json(ws, {header: 1});
+            var records = [];
+            for(var i = 0; i < rows.length; i++) {
+                if(!rows[i] || !rows[i].length) continue;
+                var dateStr = '', amount = 0, note = '';
+                for(var j = 0; j < rows[i].length; j++) {
+                    var v = String(rows[i][j] || '').trim();
+                    if(v.match(/^\d{4}[-/.]\d{1,2}[-/.]\d{1,2}$/)) dateStr = v;
+                    else if(typeof rows[i][j] === 'number' && rows[i][j] > 0 && !amount) amount = rows[i][j];
+                    else if(v.match(/^-?\d+(\.\d+)?$/) && !amount) amount = parseFloat(v);
+                    else if(v && !v.match(/日期|时间|金额|amount|备注|note|说明|序号|编号/i)) note += (note?' ':'') + v;
+                }
+                if(dateStr && amount) records.push({ date: dateStr, amount: amount, note: note });
+            }
+            if(records.length) { pendingImportRecords = records; showConfirmModal(); }
+            else showToast('未能从Excel中解析出有效记录');
+        };
+        reader.readAsArrayBuffer(file);
     }
-    if(dateCol<0&&headers.length>=1)dateCol=0;
-    if(amountCol<0&&headers.length>=2)amountCol=1;
-    if(dateCol<0||amountCol<0){showToast('\u672A\u8BC6\u522B\u5230\u65E5\u671F/\u91D1\u989D\u5217');return;}
-    var parsed=[];
-    for(var ri=1;ri<data.length;ri++){
-        var row=data[ri];
-        if(!row||row.length<=Math.max(dateCol,amountCol))continue;
-        var dVal=(row[dateCol]||'').toString().trim();
-        var aVal=row[amountCol]?parseFloat(row[amountCol]):NaN;
-        if(isNaN(aVal)||aVal===0)continue;
-        var nVal=noteCol>=0?(row[noteCol]||'').toString().trim():'';
-        parsed.push({raw:dVal,date:dVal,amount:aVal,note:nVal});
-    }
-    _structuredParsed=parsed;
-    displayParsedResults(parsed,filename);
-}
-function displayParsedResults(parsed,filename){
-    var container=$('structuredResult');
-    container.style.display='';
-    var h='<h4 style="margin-bottom:10px;font-size:14px;font-weight:600">&#x1F4CA; \u6587\u4EF6: '+filename+' &mdash; \u8BC6\u522B\u5230 '+parsed.length+' \u6761\u8BB0\u5F55</h4>';
-    h+='<table style="width:100%;border-collapse:collapse;font-size:13px">';
-    h+='<tr style="background:var(--surface-variant)"><th style="padding:8px;border:1px solid var(--border-light)">\u65E5\u671F</th><th style="padding:8px;border:1px solid var(--border-light)">\u91D1\u989D(\u5143)</th><th style="padding:8px;border:1px solid var(--border-light)">\u5907\u6CE8</th></tr>';
-    for(var i=0;i<parsed.length;i++){
-        h+='<tr><td style="padding:8px;border:1px solid var(--border-light)">'+parsed[i].date+'</td><td style="padding:8px;border:1px solid var(--border-light);text-align:right;font-weight:600">\u00A5'+parsed[i].amount.toFixed(2)+'</td><td style="padding:8px;border:1px solid var(--border-light)">'+(parsed[i].note||'-')+'</td></tr>';
-    }
-    h+='</table>';
-    h+='<div class="btn-group" style="margin-top:12px"><button class="btn btn-primary btn-sm" onclick="importStructuredToRepayments()">&#x2705; \u5BFC\u5165\u5230\u8FD8\u6B3E\u660E\u7EC6</button></div>';
-    container.innerHTML=h;
-}
-function importStructuredToRepayments(){
-    if(!_structuredParsed||!_structuredParsed.length){showToast('\u6CA1\u6709\u53EF\u5BFC\u5165\u7684\u6570\u636E');return;}
-    for(var i=0;i<_structuredParsed.length;i++){
-        addRepaymentRow({date:_structuredParsed[i].date,amount:_structuredParsed[i].amount,note:_structuredParsed[i].note});
-    }
-    showTab('calc');
-    showToast('\u5DF2\u5BFC\u5165 '+_structuredParsed.length+' \u6761\u8FD8\u6B3E\u8BB0\u5F55 &#x2705;');
+    event.target.value = '';
 }
 
-// ==================== OCR \u8BC6\u522B ====================
+/* ===== OCR 识别 ===== */
+var quickOcrTextCache = '';
 async function handleOCRImport(event) {
-    var file=event.target.files[0];
-    if(!file)return;
-    var isPdf=file.type==='application/pdf';
-    $('ocrProgress').style.display='';
-    $('ocrResultArea').style.display='none';
-    $('ocrStatusText').textContent=isPdf?'\u6B63\u5728\u5904\u7406 PDF \u6587\u4EF6...':'\u6B63\u5728\u8BC6\u522B\u56FE\u7247\u6587\u5B57...';
-    try{
-        var recognizedText='';
-        if(typeof Tesseract!=='undefined'){
-            var result=await Tesseract.recognize(file,'chi_sim+eng',{
-                logger:function(m){
-                    if(m.status==='recognizing text'){
-                        var pct=Math.round(m.progress*100);
-                        $('ocrStatusText').textContent='\u8BC6\u522B\u4E2D... '+pct+'%';
+    var file = event.target.files[0];
+    if(!file) return;
+    $('ocrProgress').style.display = '';
+    $('ocrResultArea').style.display = 'none';
+    $('ocrStatusText').textContent = file.type === 'application/pdf' ? '正在处理 PDF 文件...' : '正在识别图片文字...';
+    try {
+        var recognizedText = '';
+        if(typeof Tesseract !== 'undefined') {
+            var result = await Tesseract.recognize(file, 'chi_sim+eng', {
+                logger: function(m) {
+                    if(m.status === 'recognizing text') {
+                        var pct = Math.round(m.progress * 100);
+                        $('ocrStatusText').textContent = '识别中... ' + pct + '%';
                     }
                 }
             });
-            recognizedText=result.data.text;
-        }else{
-            throw new Error('OCR \u5E93\u672A\u52A0\u8F7D\uFF0C\u8BF7\u5237\u65B0\u9875\u9762\u91CD\u8BD5');
+            recognizedText = result.data.text;
+        } else {
+            throw new Error('OCR 库未加载，请刷新页面重试');
         }
-        ocrTextCache=recognizedText;
-        $('ocrTextDisplay').textContent=recognizedText||'(\u672A\u8BC6\u522B\u5230\u6587\u5B57\u5185\u5BB9)';
-        $('ocrProgress').style.display='none';
-        $('ocrResultArea').style.display='';
-        showToast('OCR \u8BC6\u522B\u5B8C\u6210 &#x2705;');
-    }catch(e){
-        $('ocrProgress').style.display='none';
-        showToast('OCR \u8BC6\u522B\u5931\u8D25: '+e.message);
+        ocrTextCache = recognizedText;
+        $('ocrTextDisplay').textContent = recognizedText || '(未识别到文字内容)';
+        $('ocrProgress').style.display = 'none';
+        $('ocrResultArea').style.display = '';
+        showToast('OCR 识别完成！');
+    } catch(e) {
+        $('ocrProgress').style.display = 'none';
+        showToast('OCR 识别失败: ' + e.message);
     }
-    event.target.value='';
+    event.target.value = '';
 }
-function importOcrToRepayments(){
-    if(!ocrTextCache){showToast('\u6CA1\u6709 OCR \u8BC6\u522B\u7ED3\u679C');return;}
-    var lines=ocrTextCache.split(/\n/);
-    var count=0;
-    var dateRegex=/(\d{4}[-\/]\d{1,2}[-\/]\d{1,2})/;
-    var amountRegex=/[\uffe5￥$]?\s*(\d+[,\d]*\.?\d*)|\d+[,\d]*\.?\d*\s*(\u5143|yuan)/gi;
-    for(var li=0;li<lines.length;li++){
-        var line=lines[li].trim();
-        if(!line)continue;
-        var dm=line.match(dateRegex);
-        var am=line.match(amountRegex);
-        if(dm&&am){
-            var ds=dm[1].replace(/\//g,'-');
-            var av=am[1]||am[2];
-            av=av.replace(/,/g,'');
-            var amt=parseFloat(av);
-            if(isNaN(amt)||amt<=0)continue;
-            addRepaymentRow({date:ds,amount:amt,note:''});
-            count++;
+
+function importOcrToRepaymentsWithConfirm() {
+    if(!ocrTextCache) { showToast('没有可用的 OCR 识别结果'); return; }
+    var records = parseOcrText(ocrTextCache);
+    if(!records.length) { showToast('未能从识别结果中解析出还款记录'); return; }
+    pendingImportRecords = records;
+    showConfirmModal();
+}
+
+async function handleQuickImport(event) {
+    var file = event.target.files[0];
+    if(!file) return;
+    var ext = file.name.split('.').pop().toLowerCase();
+    if(ext === 'csv' || ext === 'txt') {
+        handleStructuredImport(event);
+        return;
+    } else if(ext === 'xlsx') {
+        handleStructuredImport(event);
+        return;
+    }
+    $('quickOcrProgress').style.display = '';
+    $('quickOcrResultArea').style.display = 'none';
+    $('quickOcrStatusText').textContent = file.type === 'application/pdf' ? '正在处理 PDF 文件...' : '正在识别图片文字...';
+    try {
+        var recognizedText = '';
+        if(typeof Tesseract !== 'undefined') {
+            var result = await Tesseract.recognize(file, 'chi_sim+eng', {
+                logger: function(m) {
+                    if(m.status === 'recognizing text') {
+                        var pct = Math.round(m.progress * 100);
+                        $('quickOcrStatusText').textContent = '识别中... ' + pct + '%';
+                    }
+                }
+            });
+            recognizedText = result.data.text;
+        } else {
+            throw new Error('OCR 库未加载，请刷新页面重试');
+        }
+        quickOcrTextCache = recognizedText;
+        $('quickOcrProgress').style.display = 'none';
+        var records = parseOcrText(recognizedText);
+        if(records.length) {
+            $('quickOcrResultArea').style.display = '';
+            $('quickOcrResultArea').innerHTML = '<div class="ocr-result"><h4>📝 识别到 ' + records.length + ' 条记录</h4><div class="ocr-text" style="max-height:150px">' + (recognizedText||'').substring(0,500) + '</div><div class="btn-group" style="margin-top:12px"><button class="btn btn-primary btn-sm" onclick="quickConfirmImport()">✅ 确认并导入</button><button class="btn btn-secondary btn-sm" onclick="$(\'quickOcrResultArea\').style.display=\'none\'">取消</button></div></div>';
+            pendingImportRecords = records;
+        } else {
+            showToast('未能从识别结果中解析出还款记录');
+        }
+    } catch(e) {
+        $('quickOcrProgress').style.display = 'none';
+        showToast('识别失败: ' + e.message);
+    }
+    event.target.value = '';
+}
+
+function quickConfirmImport() {
+    showConfirmModal();
+    $('quickOcrResultArea').style.display = 'none';
+}
+
+function parseOcrText(text) {
+    if(!text || !text.trim()) return [];
+    var records = [];
+    var lines = text.split(/[\n\r]+/);
+    for(var i = 0; i < lines.length; i++) {
+        var line = lines[i].trim();
+        if(!line) continue;
+        var dateMatch = line.match(/(\d{4}[-/.]\d{1,2}[-/.]\d{1,2})/);
+        if(!dateMatch) continue;
+        var dateStr = dateMatch[1];
+        var rest = line.substring(dateMatch.index + dateMatch[0].length);
+        var nums = rest.match(/-?\d+(\.\d+)?/g);
+        var amount = 0;
+        if(nums) {
+            for(var n = 0; n < nums.length; n++) {
+                var v = parseFloat(nums[n]);
+                if(Math.abs(v) > 0.01) { amount = v; break; }
+            }
+        }
+        var note = line.replace(dateMatch[0], '').replace(/^-?\d+(\.\d+)?/, '').trim();
+        if(amount !== 0) records.push({ date: dateStr, amount: amount, note: note || '' });
+    }
+    return records;
+}
+
+/* ===== 确认弹窗 ===== */
+function showConfirmModal() {
+    if(!pendingImportRecords.length) return;
+    var tbody = $('confirmTableBody');
+    var html = '';
+    for(var i = 0; i < pendingImportRecords.length; i++) {
+        var r = pendingImportRecords[i];
+        var amount = parseFloat(r.amount) || 0;
+        var defaultType = amount < 0 ? 'advance' : 'repayment';
+        html += '<tr><td>' + (i+1) + '</td><td>' + (r.date||'') + '</td><td>' + fmtMoney(Math.abs(amount)) + '</td><td>' + (r.note||'') + '</td><td><select class="type-select" id="confirmType-' + i + '"><option value="repayment"' + (defaultType==='repayment'?' selected':'') + '>还款</option><option value="advance"' + (defaultType==='advance'?' selected':'') + '>借款（追加出借）</option></select></td></tr>';
+    }
+    tbody.innerHTML = html;
+    $('confirmModal').classList.add('show');
+}
+function closeConfirmModal() {
+    $('confirmModal').classList.remove('show');
+    pendingImportRecords = [];
+}
+function confirmImportRecords() {
+    for(var i = 0; i < pendingImportRecords.length; i++) {
+        var type = document.getElementById('confirmType-' + i);
+        var recordType = type ? type.value : 'repayment';
+        var r = pendingImportRecords[i];
+        var amount = Math.abs(parseFloat(r.amount) || 0);
+        if(recordType === 'repayment') {
+            repaymentItems.push({ date: r.date, amount: amount, note: r.note });
+        } else {
+            advanceItems.push({ date: r.date, amount: amount, note: r.note });
         }
     }
-    if(count>0){showTab('calc');showToast('\u4ece OCR \u7ED3\u679C\u5BFC\u5165 '+count+' \u6761&#x2705;');}
-    else{showToast('\u672A\u4ece OCR \u7ED3\u679C\u4E2D\u8BC6\u522B\u5230\u65E5\u671F+\u91D1\u989D\u8BB0\u5F55');}
+    renderRepaymentRows();
+    renderAdvanceRows();
+    closeConfirmModal();
+    showToast('已导入 ' + pendingImportRecords.length + ' 条记录');
+    switchTab('calc');
 }
-function copyOcrText(){
-    if(!ocrTextCache){showToast('\u6CA1\u6709\u53EF\u590D\u5236\u7684\u6587\u5B57');return;}
-    navigator.clipboard.writeText(ocrTextCache).then(function(){showToast('\u5DF2\u590D\u5236 OCR \u6587\u5B57');}).catch(function(){showToast('\u590D\u5236\u5931\u8D25');});
+
+function copyOcrText() {
+    if(!ocrTextCache) { showToast('没有可复制的 OCR 文本'); return; }
+    navigator.clipboard.writeText(ocrTextCache).then(function(){ showToast('已复制 OCR 识别文本'); }).catch(function(){ showToast('复制失败'); });
 }
 
-// ==================== \u62D6\u62FD\u4E0A\u4F20 ====================
-(function initDragDrop(){
-    var csvZone=$('csvUploadZone');
-    var ocrZone=$('ocrUploadZone');
-    if(csvZone){
-        ['dragenter','dragover'].forEach(function(ev){csvZone.addEventListener(ev,function(e){e.preventDefault();e.stopPropagation();this.classList.add('dragover');});});
-        ['dragleave','drop'].forEach(function(ev){csvZone.addEventListener(ev,function(e){e.preventDefault();e.stopPropagation();this.classList.remove('dragover');if(ev==='drop'){var dt=e.dataTransfer;if(dt.files.length)handleStructuredImport({target:{files:dt.files}});}});});
-    }
-    if(ocrZone){
-        ['dragenter','dragover'].forEach(function(ev){ocrZone.addEventListener(ev,function(e){e.preventDefault();e.stopPropagation();this.classList.add('dragover');});});
-        ['dragleave','drop'].forEach(function(ev){ocrZone.addEventListener(ev,function(e){e.preventDefault();e.stopPropagation();this.classList.remove('dragover');if(ev==='drop'){var dt=e.dataTransfer;if(dt.files.length)handleOCRImport({target:{files:dt.files}});}});});
-    }
-})();
+/* ===== 页面初始化 ===== */
+function initPage() {
+    initDynamicFields();
+    renderRepaymentRows();
+    renderAdvanceRows();
+    renderSchemeList();
+    renderTimelineStages();
+    updateStageCount();
+    onRateSourceChange();
+}
+if(document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPage);
+} else {
+    initPage();
 
-// ==================== \u542F\u52A8 ====================
-document.addEventListener('DOMContentLoaded', function(){ initApp(); });
-
-window.addRepaymentRow=addRepaymentRow;
-window.removeRepaymentRow=removeRepaymentRow;
-window.editRepaymentRow=editRepaymentRow;
-window.clearRepayments=clearRepayments;
-window.addAdvanceRow=addAdvanceRow;
-window.removeAdvanceRow=removeAdvanceRow;
-window.editAdvanceRow=editAdvanceRow;
-window.clearAdvances=clearAdvances;
-window.addTimelineStage=addTimelineStage;
-window.removeTimelineStage=removeTimelineStage;
-window.updateStageField=updateStageField;
-window.doCalculate=doCalculate;
-window.exportExcel=exportExcel;
-window.copyResult=copyResult;
-window.saveCurrentScheme=saveCurrentScheme;
-window.deleteScheme=deleteScheme;
-window.clearAllSchemes=clearAllSchemes;
-window.handleStructuredImport=handleStructuredImport;
-window.handleOCRImport=handleOCRImport;
-window.importOcrToRepayments=importOcrToRepayments;
-window.copyOcrText=copyOcrText;
-window.onRateSourceChange=onRateSourceChange;
-window.showSchemeImport=showSchemeImport;
-window.toggleRowCard=toggleRowCard;
-window.expandAllRows=expandAllRows;
-window.collapseAllRows=collapseAllRows;
-window.setFilter=setFilter;
-
-})();
 </script>
 </body>
 </html>
