@@ -404,7 +404,7 @@ function getRateForDate(targetDate, source, customRates, fixedRateVal) {
         default: history = LPR_5Y;
     }
     var mr = null;
-    for(var i = 0; i < history.length; i++) { var rd = new Date(history[i][0], history[i][1]-1, history[i][2]); if(rd <= targetDate) mr = history[i][2]; else break; }
+    for(var i = 0; i < history.length; i++) { var rd = new Date(history[i][0], history[i][1]-1, history[i][2]); if(rd <= targetDate) mr = history[i][3]; else break; }
     return mr !== null ? mr : 0;
 }
 
@@ -614,6 +614,26 @@ function doCalculate() {
         }
 
         var boundaryKeys = Object.keys(paymentMap).concat(Object.keys(advanceMap)).concat([fmtDate(startDate), fmtDate(endDate)]);
+
+        var rateHistories = [];
+        for(var hsi = 0; hsi < stagesArr.length; hsi++) {
+            var src = stagesArr[hsi].rateSource;
+            if(src === 'lpr_1y') rateHistories.push(LPR_1Y);
+            else if(src === 'lpr_5y') rateHistories.push(LPR_5Y);
+            else if(src === 'benchmark_loan') rateHistories.push(BENCHMARK);
+            else if(src === 'custom_schedule') {
+                var crs = stagesArr[hsi].customRates || [];
+                for(var cri = 0; cri < crs.length; cri++) boundaryKeys.push(fmtDate(crs[cri].date));
+            }
+        }
+        for(var rhi = 0; rhi < rateHistories.length; rhi++) {
+            var rh = rateHistories[rhi];
+            for(var rdj = 0; rdj < rh.length; rdj++) {
+                var rd = new Date(rh[rdj][0], rh[rdj][1] - 1, rh[rdj][2]);
+                if(rd > startDate && rd < endDate) boundaryKeys.push(fmtDate(rd));
+            }
+        }
+
         boundaryKeys.sort();
         boundaryKeys = boundaryKeys.filter(function(v,i,a){return !i || v !== a[i-1];});
 
